@@ -11,36 +11,10 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{521D3D84-7F2A-47F0-9171-5FEADF222769}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{34FD9818-A276-4F93-8E95-54474952E27E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DAR-LAB-MA\SQLEXPRESS.DDMVMS]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{426C2E72-6708-4D0C-BB1C-1EF5316E6F49}"
-      DTS:ObjectName="DAR-LAB-MA\SQLEXPRESS.DDMVMS">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DAR-LAB-MA\SQLEXPRESS;Initial Catalog=DDMVMS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{426C2E72-6708-4D0C-BB1C-1EF5316E6F49}DAR-LAB-MA\SQLEXPRESS.DDMVMS;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DAR-LAB-MA\SQLEXPRESS.DELPRO]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{28B39B4A-D5BF-4517-A6EF-304569CEBB2A}"
-      DTS:ObjectName="DAR-LAB-MA\SQLEXPRESS.DELPRO">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DAR-LAB-MA\SQLEXPRESS;Initial Catalog=DELPRO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{28B39B4A-D5BF-4517-A6EF-304569CEBB2A}DAR-LAB-MA\SQLEXPRESS.DELPRO;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
@@ -202,8 +176,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\DDVMS Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DAR-LAB-MA\SQLEXPRESS.DDMVMS]"
-                  connectionManagerRefId="Package.ConnectionManagers[DAR-LAB-MA\SQLEXPRESS.DDMVMS]"
+                  connectionManagerID="{3AD2592E-37A1-44D8-885B-B0F78490B3BF}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DAR-LAB-MA_SQLEXPRESS.DDMVMS]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -995,8 +969,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\DELPRO Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DAR-LAB-MA\SQLEXPRESS.DELPRO]"
-                  connectionManagerRefId="Package.ConnectionManagers[DAR-LAB-MA\SQLEXPRESS.DELPRO]"
+                  connectionManagerID="{9B663900-A072-448A-9AAF-C9620739B7D3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DAR-LAB-MA_SQLEXPRESS.DELPRO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3250,8 +3224,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[DAR-LAB-MA\SQLEXPRESS.DELPRO]"
-                  connectionManagerRefId="Package.ConnectionManagers[DAR-LAB-MA\SQLEXPRESS.DELPRO]"
+                  connectionManagerID="{9B663900-A072-448A-9AAF-C9620739B7D3}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DAR-LAB-MA_SQLEXPRESS.DELPRO]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -6061,6 +6035,10 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="177,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="277,418" />
+        <NodeLayout
           Size="156,42"
           Id="Package\Data Flow Task\DDVMS Source"
           TopLeft="172.777777777778,36.1111111111111" />
@@ -6072,46 +6050,44 @@
           Size="133,42"
           Id="Package\Data Flow Task\Sort - DDVMS"
           TopLeft="184,139" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="250.638888888889,78.1111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.8888888888889"
-              Start="0,0"
-              End="0,53.3888888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.3888888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Data Flow Task\Conditional Split"
+          TopLeft="286,324" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Data Flow Task\Merge Join"
+          TopLeft="297,227" />
         <NodeLayout
           Size="141,42"
           Id="Package\Data Flow Task\Sort - Delpro"
           TopLeft="433,139" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
-          TopLeft="505.25,80">
+          Id="Package\Data Flow Task.Paths[Sort Output1]"
+          TopLeft="503.5,181">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59"
+              EndConnector="-119.166666666667,46"
               Start="0,0"
-              End="0,51.5">
+              End="-119.166666666667,38.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.5" />
+                    End="0,23.2719167904903" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.2719167904903"
+                    Point2="0,27.2719167904903"
+                    Point3="-4,27.2719167904903" />
+                  <mssgle:LineSegment
+                    End="-115.166666666667,27.2719167904903" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-115.166666666667,27.2719167904903"
+                    Point2="-119.166666666667,27.2719167904903"
+                    Point3="-119.166666666667,31.2719167904903" />
+                  <mssgle:LineSegment
+                    End="-119.166666666667,38.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6120,10 +6096,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Data Flow Task\Merge Join"
-          TopLeft="297,227" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output]"
           TopLeft="250.5,181">
@@ -6159,31 +6131,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output1]"
-          TopLeft="503.5,181">
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="505.25,80">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-119.166666666667,46"
+              EndConnector="0,59"
               Start="0,0"
-              End="-119.166666666667,38.5">
+              End="0,51.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,23.2719167904903" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.2719167904903"
-                    Point2="0,27.2719167904903"
-                    Point3="-4,27.2719167904903" />
-                  <mssgle:LineSegment
-                    End="-115.166666666667,27.2719167904903" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-115.166666666667,27.2719167904903"
-                    Point2="-119.166666666667,27.2719167904903"
-                    Point3="-119.166666666667,31.2719167904903" />
-                  <mssgle:LineSegment
-                    End="-119.166666666667,38.5" />
+                    End="0,51.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6192,10 +6152,28 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Data Flow Task\Conditional Split"
-          TopLeft="286,324" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="250.638888888889,78.1111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.8888888888889"
+              Start="0,0"
+              End="0,53.3888888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.3888888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Merge Join Output]"
           TopLeft="364.5,269">
@@ -6218,10 +6196,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="277,418" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[insert]"
           TopLeft="365.5,366">
@@ -6250,6 +6224,19 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\DDVMS Source">
     <Properties>
       <Property>
@@ -6264,19 +6251,6 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\DELPRO Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

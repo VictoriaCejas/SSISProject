@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DAR-LAB-MA_SQLEXPRESS.DDMVMS"
+  DTS:DTSID="{3AD2592E-37A1-44D8-885B-B0F78490B3BF}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DAR-LAB-MA\SQLEXPRESS;Initial Catalog=DDMVMS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-SSIS-{3AD2592E-37A1-44D8-885B-B0F78490B3BF}DAR-LAB-MA\SQLEXPRESS.DDMVMS;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
