@@ -7,6 +7,6 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=DAR-LAB-MA\SQLEXPRESS;Initial Catalog=DELPRO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-SSIS-{9B663900-A072-448A-9AAF-C9620739B7D3}DAR-LAB-MA\SQLEXPRESS.DELPRO;Auto Translate=False;" />
+      DTS:ConnectionString="Data Source=DAR-LAB-MA\SQLEXPRESS;Initial Catalog=DELPRO;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-SSIS-{9B663900-A072-448A-9AAF-C9620739B7D3}DAR-LAB-MA\SQLEXPRESS.DELPRO;" />
   </DTS:ObjectData>
 </DTS:ConnectionManager>
