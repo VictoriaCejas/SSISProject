@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarea-DAR-LAB-MA_SQLEXPRESS.DELPRO",
+      "appliesTo": "SSIS/SSIS/DAR-LAB-MA_SQLEXPRESS.DELPRO.conmgr",
+      "type": "launch"
+    }
+  ]
+}
