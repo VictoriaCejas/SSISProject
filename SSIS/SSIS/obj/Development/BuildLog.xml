@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS</Name>
-    <LastWriteTime>2022-11-24T01:46:29.127186Z</LastWriteTime>
+    <LastWriteTime>2022-11-29T22:57:16.4610995Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,12 +13,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ETL-History-Animal.dtsx</Name>
-      <LastWriteTime>2022-11-17T00:08:33.60953Z</LastWriteTime>
+      <LastWriteTime>2022-11-26T22:03:09.0284075Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Stage2.dtsx</Name>
-      <LastWriteTime>2022-11-24T01:50:42.9527602Z</LastWriteTime>
+      <LastWriteTime>2022-11-29T22:57:16.4431682Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
