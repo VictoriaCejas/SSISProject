@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DAR-LAB-MA"
   DTS:CreatorName="DAR-LAB-MA\Victoria"
-  DTS:DTSID="{08C753C3-3EA6-4909-85E9-1CB966D876D0}"
+  DTS:DTSID="{3369B68E-95F1-441E-8C0F-57209E2DB594}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.521.0"
   DTS:LocaleID="11274"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Stage1"
   DTS:PackageType="5"
-  DTS:VersionBuild="181"
-  DTS:VersionGUID="{DA007FA2-41A7-4102-AAD6-7BE99E23E2AB}">
+  DTS:VersionBuild="192"
+  DTS:VersionGUID="{1499C5EA-CD5B-49FF-B886-EA56B8F70817}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -14238,13 +14238,13 @@ where OID = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                      name="Expression">([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Number]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Number (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OffRegNumber]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OffRegNumber (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LastGroup]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LastGroup (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Gender]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Gender (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Breed]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Breed (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BirthDate]},"1996-18-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BirthDate (1)]},"1996-18-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[FatherORN]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[FatherORN (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[MotherORN]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[MotherORN (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TBCDate]},"1996-18-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TBCDate (1)]},"1996-18-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitDate]},"1996-18-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitDate (1)]},"1996-18-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitReason]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitReason (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[EntryEventDate]},"1996-18-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[EntryEventDate (1)]},"1996-18-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitType]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitType (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[CullDecisionDate]},"1996-18-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[CullDecisionDate (1)]},"1996-18-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[HairColor]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[HairColor (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ReferenceId]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ReferenceId (1)]},0))</property>
+                      name="Expression">([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Number]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Number (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OffRegNumber]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OffRegNumber (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LastGroup]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LastGroup (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Gender]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Gender (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Breed]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Breed (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BirthDate]},"1996-10-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BirthDate (1)]},"1996-10-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[FatherORN]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[FatherORN (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[MotherORN]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[MotherORN (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TBCDate]},"1996-10-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TBCDate (1)]},"1996-10-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitDate]},"1996-10-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitDate (1)]},"1996-10-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitReason]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitReason (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[EntryEventDate]},"1996-10-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[EntryEventDate (1)]},"1996-10-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitType]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitType (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[CullDecisionDate]},"1997-10-10") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[CullDecisionDate (1)]},"1997-10-10")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]},"") != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name (1)]},"")) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[HairColor]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[HairColor (1)]},0)) || ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ReferenceId]},0) != [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ReferenceId (1)]},0))</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the friendly version of the expression. This expression version uses column names."
                       expressionType="Notify"
-                      name="FriendlyExpression">(REPLACENULL(Number,0) != REPLACENULL([Number (1)],0)) || (REPLACENULL(OffRegNumber,"") != REPLACENULL([OffRegNumber (1)],"")) || (REPLACENULL(LastGroup,"") != REPLACENULL([LastGroup (1)],"")) || (REPLACENULL(Gender,"") != REPLACENULL([Gender (1)],"")) || (REPLACENULL(Breed,"") != REPLACENULL([Breed (1)],"")) || (REPLACENULL(BirthDate,"1996-18-10") != REPLACENULL([BirthDate (1)],"1996-18-10")) || (REPLACENULL(LactationNumber,0) != REPLACENULL([LactationNumber (1)],0)) || (REPLACENULL(FatherORN,"") != REPLACENULL([FatherORN (1)],"")) || (REPLACENULL(MotherORN,"") != REPLACENULL([MotherORN (1)],"")) || (REPLACENULL(TBCDate,"1996-18-10") != REPLACENULL([TBCDate (1)],"1996-18-10")) || (REPLACENULL(ExitDate,"1996-18-10") != REPLACENULL([ExitDate (1)],"1996-18-10")) || (REPLACENULL(ExitReason,0) != REPLACENULL([ExitReason (1)],0)) || (REPLACENULL(EntryEventDate,"1996-18-10") != REPLACENULL([EntryEventDate (1)],"1996-18-10")) || (REPLACENULL(ExitType,0) != REPLACENULL([ExitType (1)],0)) || (REPLACENULL(CullDecisionDate,"1996-18-10") != REPLACENULL([CullDecisionDate (1)],"1996-18-10")) || (REPLACENULL(Name,"") != REPLACENULL([Name (1)],"")) || (REPLACENULL(HairColor,0) != REPLACENULL([HairColor (1)],0)) || (REPLACENULL(ReferenceId,0) != REPLACENULL([ReferenceId (1)],0))</property>
+                      name="FriendlyExpression">(REPLACENULL(Number,0) != REPLACENULL([Number (1)],0)) || (REPLACENULL(OffRegNumber,"") != REPLACENULL([OffRegNumber (1)],"")) || (REPLACENULL(LastGroup,0) != REPLACENULL([LastGroup (1)],0)) || (REPLACENULL(Gender,0) != REPLACENULL([Gender (1)],0)) || (REPLACENULL(Breed,0) != REPLACENULL([Breed (1)],0)) || (REPLACENULL(BirthDate,"1996-10-10") != REPLACENULL([BirthDate (1)],"1996-10-10")) || (REPLACENULL(LactationNumber,0) != REPLACENULL([LactationNumber (1)],0)) || (REPLACENULL(FatherORN,"") != REPLACENULL([FatherORN (1)],"")) || (REPLACENULL(MotherORN,"") != REPLACENULL([MotherORN (1)],"")) || (REPLACENULL(TBCDate,"1996-10-10") != REPLACENULL([TBCDate (1)],"1996-10-10")) || (REPLACENULL(ExitDate,"1996-10-10") != REPLACENULL([ExitDate (1)],"1996-10-10")) || (REPLACENULL(ExitReason,0) != REPLACENULL([ExitReason (1)],0)) || (REPLACENULL(EntryEventDate,"1996-10-10") != REPLACENULL([EntryEventDate (1)],"1996-10-10")) || (REPLACENULL(ExitType,0) != REPLACENULL([ExitType (1)],0)) || (REPLACENULL(CullDecisionDate,"1997-10-10") != REPLACENULL([CullDecisionDate (1)],"1997-10-10")) || (REPLACENULL(Name,"") != REPLACENULL([Name (1)],"")) || (REPLACENULL(HairColor,0) != REPLACENULL([HairColor (1)],0)) || (REPLACENULL(ReferenceId,0) != REPLACENULL([ReferenceId (1)],0))</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
@@ -14266,13 +14266,13 @@ where OID = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
-                      name="Expression">([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Number]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Number (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OffRegNumber]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OffRegNumber (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LastGroup]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LastGroup (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Gender]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Gender (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Breed]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Breed (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BirthDate]},"1996-18-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BirthDate (1)]},"1996-18-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[FatherORN]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[FatherORN (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[MotherORN]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[MotherORN (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TBCDate]},"1996-18-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TBCDate (1)]},"1996-18-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitDate]},"1996-18-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitDate (1)]},"1996-18-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitReason]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitReason (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[EntryEventDate]},"1996-18-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[EntryEventDate (1)]},"1996-18-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitType]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitType (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[CullDecisionDate]},"1996-18-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[CullDecisionDate (1)]},"1996-18-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[HairColor]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[HairColor (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ReferenceId]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ReferenceId (1)]},0))</property>
+                      name="Expression">([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Number]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Number (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OffRegNumber]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OffRegNumber (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LastGroup]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LastGroup (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Gender]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Gender (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Breed]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Breed (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BirthDate]},"1996-10-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BirthDate (1)]},"1996-10-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[FatherORN]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[FatherORN (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[MotherORN]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[MotherORN (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TBCDate]},"1996-10-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TBCDate (1)]},"1996-10-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitDate]},"1996-10-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitDate (1)]},"1996-10-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitReason]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitReason (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[EntryEventDate]},"1996-10-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[EntryEventDate (1)]},"1996-10-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitType]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ExitType (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[CullDecisionDate]},"1997-10-10") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[CullDecisionDate (1)]},"1997-10-10")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]},"") == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name (1)]},"")) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[HairColor]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[HairColor (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ReferenceId]},0) == [REPLACENULL](#{Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ReferenceId (1)]},0))</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
                       expressionType="Notify"
-                      name="FriendlyExpression">(REPLACENULL(Number,0) == REPLACENULL([Number (1)],0)) &amp;&amp; (REPLACENULL(OffRegNumber,"") == REPLACENULL([OffRegNumber (1)],"")) &amp;&amp; (REPLACENULL(LastGroup,"") == REPLACENULL([LastGroup (1)],"")) &amp;&amp; (REPLACENULL(Gender,"") == REPLACENULL([Gender (1)],"")) &amp;&amp; (REPLACENULL(Breed,"") == REPLACENULL([Breed (1)],"")) &amp;&amp; (REPLACENULL(BirthDate,"1996-18-10") == REPLACENULL([BirthDate (1)],"1996-18-10")) &amp;&amp; (REPLACENULL(LactationNumber,0) == REPLACENULL([LactationNumber (1)],0)) &amp;&amp; (REPLACENULL(FatherORN,"") == REPLACENULL([FatherORN (1)],"")) &amp;&amp; (REPLACENULL(MotherORN,"") == REPLACENULL([MotherORN (1)],"")) &amp;&amp; (REPLACENULL(TBCDate,"1996-18-10") == REPLACENULL([TBCDate (1)],"1996-18-10")) &amp;&amp; (REPLACENULL(ExitDate,"1996-18-10") == REPLACENULL([ExitDate (1)],"1996-18-10")) &amp;&amp; (REPLACENULL(ExitReason,0) == REPLACENULL([ExitReason (1)],0)) &amp;&amp; (REPLACENULL(EntryEventDate,"1996-18-10") == REPLACENULL([EntryEventDate (1)],"1996-18-10")) &amp;&amp; (REPLACENULL(ExitType,0) == REPLACENULL([ExitType (1)],0)) &amp;&amp; (REPLACENULL(CullDecisionDate,"1996-18-10") == REPLACENULL([CullDecisionDate (1)],"1996-18-10")) &amp;&amp; (REPLACENULL(Name,"") == REPLACENULL([Name (1)],"")) &amp;&amp; (REPLACENULL(HairColor,0) == REPLACENULL([HairColor (1)],0)) &amp;&amp; (REPLACENULL(ReferenceId,0) == REPLACENULL([ReferenceId (1)],0))</property>
+                      name="FriendlyExpression">(REPLACENULL(Number,0) == REPLACENULL([Number (1)],0)) &amp;&amp; (REPLACENULL(OffRegNumber,"") == REPLACENULL([OffRegNumber (1)],"")) &amp;&amp; (REPLACENULL(LastGroup,0) == REPLACENULL([LastGroup (1)],0)) &amp;&amp; (REPLACENULL(Gender,0) == REPLACENULL([Gender (1)],0)) &amp;&amp; (REPLACENULL(Breed,0) == REPLACENULL([Breed (1)],0)) &amp;&amp; (REPLACENULL(BirthDate,"1996-10-10") == REPLACENULL([BirthDate (1)],"1996-10-10")) &amp;&amp; (REPLACENULL(LactationNumber,0) == REPLACENULL([LactationNumber (1)],0)) &amp;&amp; (REPLACENULL(FatherORN,"") == REPLACENULL([FatherORN (1)],"")) &amp;&amp; (REPLACENULL(MotherORN,"") == REPLACENULL([MotherORN (1)],"")) &amp;&amp; (REPLACENULL(TBCDate,"1996-10-10") == REPLACENULL([TBCDate (1)],"1996-10-10")) &amp;&amp; (REPLACENULL(ExitDate,"1996-10-10") == REPLACENULL([ExitDate (1)],"1996-10-10")) &amp;&amp; (REPLACENULL(ExitReason,0) == REPLACENULL([ExitReason (1)],0)) &amp;&amp; (REPLACENULL(EntryEventDate,"1996-10-10") == REPLACENULL([EntryEventDate (1)],"1996-10-10")) &amp;&amp; (REPLACENULL(ExitType,0) == REPLACENULL([ExitType (1)],0)) &amp;&amp; (REPLACENULL(CullDecisionDate,"1997-10-10") == REPLACENULL([CullDecisionDate (1)],"1997-10-10")) &amp;&amp; (REPLACENULL(Name,"") == REPLACENULL([Name (1)],"")) &amp;&amp; (REPLACENULL(HairColor,0) == REPLACENULL([HairColor (1)],0)) &amp;&amp; (REPLACENULL(ReferenceId,0) == REPLACENULL([ReferenceId (1)],0))</property>
                     <property
                       dataType="System.Int32"
                       description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
@@ -16215,54 +16215,6 @@ where OID = ?</property>
                           name="NewSortKeyPosition">0</property>
                       </properties>
                     </inputColumn>
-                    <inputColumn
-                      refId="Package\History Animal\Ordenar.Inputs[Entrada de ordenación].Columns[DateFirstInsertion]"
-                      cachedDataType="dbDate"
-                      cachedName="DateFirstInsertion"
-                      lineageId="Package\History Animal\DELPRO Destination.Outputs[OLE DB Source Output].Columns[DateFirstInsertion]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Especifica las opciones de comparación para datos de caracteres."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Especifica el criterio de ordenación de la columna."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\History Animal\Ordenar.Inputs[Entrada de ordenación].Columns[DateLastFound]"
-                      cachedDataType="dbDate"
-                      cachedName="DateLastFound"
-                      lineageId="Package\History Animal\DELPRO Destination.Outputs[OLE DB Source Output].Columns[DateLastFound]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Especifica las opciones de comparación para datos de caracteres."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Especifica el criterio de ordenación de la columna."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\History Animal\Ordenar.Inputs[Entrada de ordenación].Columns[IsRepeat]"
-                      cachedDataType="bool"
-                      cachedName="IsRepeat"
-                      lineageId="Package\History Animal\DELPRO Destination.Outputs[OLE DB Source Output].Columns[IsRepeat]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Especifica las opciones de comparación para datos de caracteres."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Especifica el criterio de ordenación de la columna."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -16523,45 +16475,6 @@ where OID = ?</property>
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
                           name="SortColumnId">#{Package\History Animal\DELPRO Destination.Outputs[OLE DB Source Output].Columns[ReferenceId]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\History Animal\Ordenar.Outputs[Salida de ordenación].Columns[DateFirstInsertion]"
-                      dataType="dbDate"
-                      lineageId="Package\History Animal\Ordenar.Outputs[Salida de ordenación].Columns[DateFirstInsertion]"
-                      name="DateFirstInsertion">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal\DELPRO Destination.Outputs[OLE DB Source Output].Columns[DateFirstInsertion]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\History Animal\Ordenar.Outputs[Salida de ordenación].Columns[DateLastFound]"
-                      dataType="dbDate"
-                      lineageId="Package\History Animal\Ordenar.Outputs[Salida de ordenación].Columns[DateLastFound]"
-                      name="DateLastFound">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal\DELPRO Destination.Outputs[OLE DB Source Output].Columns[DateLastFound]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\History Animal\Ordenar.Outputs[Salida de ordenación].Columns[IsRepeat]"
-                      dataType="bool"
-                      lineageId="Package\History Animal\Ordenar.Outputs[Salida de ordenación].Columns[IsRepeat]"
-                      name="IsRepeat">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal\DELPRO Destination.Outputs[OLE DB Source Output].Columns[IsRepeat]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -31139,7 +31052,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31173,7 +31088,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31195,7 +31112,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31229,7 +31148,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31263,7 +31184,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31763,17 +31686,9 @@ where OID = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="196,42"
-          Id="Package\Basic Animal\Combinación de mezcla"
-          TopLeft="269,214" />
-        <NodeLayout
-          Size="186,43"
-          Id="Package\Basic Animal\OLE DB Destination 1"
-          TopLeft="287,592.5" />
-        <NodeLayout
-          Size="119,42"
-          Id="Package\Basic Animal\Ordenar"
-          TopLeft="436,132" />
+          Size="168,42"
+          Id="Package\Basic Animal\Conditional Split 1"
+          TopLeft="299,453" />
         <NodeLayout
           Size="159,42"
           Id="Package\Basic Animal\Conditional Split"
@@ -31783,25 +31698,189 @@ where OID = ?</property>
           Id="Package\Basic Animal\DDVMS Source"
           TopLeft="172.777777777778,36.1111111111111" />
         <NodeLayout
+          Size="196,42"
+          Id="Package\Basic Animal\Combinación de mezcla"
+          TopLeft="269,214" />
+        <NodeLayout
           Size="177,42"
           Id="Package\Basic Animal\OLE DB Destination"
           TopLeft="124,408" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\Basic Animal\Conditional Split 1"
-          TopLeft="299,453" />
         <NodeLayout
           Size="99,42"
           Id="Package\Basic Animal\Sort"
           TopLeft="218,138" />
         <NodeLayout
-          Size="185,42"
-          Id="Package\Basic Animal\Comando de OLE DB"
-          TopLeft="529,585.5" />
-        <NodeLayout
           Size="204,42"
           Id="Package\Basic Animal\DELPRO Destination"
           TopLeft="405,38" />
+        <NodeLayout
+          Size="186,43"
+          Id="Package\Basic Animal\OLE DB Destination 1"
+          TopLeft="287,592.5" />
+        <NodeLayout
+          Size="119,42"
+          Id="Package\Basic Animal\Ordenar"
+          TopLeft="436,132" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Basic Animal\Comando de OLE DB"
+          TopLeft="529,585.5" />
+        <EdgeLayout
+          Id="Package\Basic Animal.Paths[Salida de combinación de mezcla]"
+          TopLeft="365.25,256">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65"
+              Start="0,0"
+              End="0,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic Animal.Paths[OLE DB Source Output1]"
+          TopLeft="507,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.5,52"
+              Start="0,0"
+              End="-11.5,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22"
+                    Point2="0,26"
+                    Point3="-4,26" />
+                  <mssgle:LineSegment
+                    End="-7.5,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.5,26"
+                    Point2="-11.5,26"
+                    Point3="-11.5,30" />
+                  <mssgle:LineSegment
+                    End="-11.5,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic Animal.Paths[OLE DB Source Output]"
+          TopLeft="250.777777777778,78.1111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.722222222222,59.8888888888889"
+              Start="0,0"
+              End="16.722222222222,52.3888888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.9444444444445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.9444444444445"
+                    Point2="0,29.9444444444445"
+                    Point3="4,29.9444444444445" />
+                  <mssgle:LineSegment
+                    End="12.722222222222,29.9444444444445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.722222222222,29.9444444444445"
+                    Point2="16.722222222222,29.9444444444445"
+                    Point3="16.722222222222,33.9444444444445" />
+                  <mssgle:LineSegment
+                    End="16.722222222222,52.3888888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic Animal.Paths[insert1]"
+          TopLeft="381.5,495">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,97.5"
+              Start="0,0"
+              End="0,90">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,90" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-12.94998046875,40.2744140625,25.8999609375,9.451171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Basic Animal.Paths[insert]"
+          TopLeft="363.5,363">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-151,45"
+              Start="0,0"
+              End="-151,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="-4,22.5" />
+                  <mssgle:LineSegment
+                    End="-147,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-147,22.5"
+                    Point2="-151,22.5"
+                    Point3="-151,26.5" />
+                  <mssgle:LineSegment
+                    End="-151,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-88.44998046875,27.5,25.8999609375,9.451171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Basic Animal.Paths[updated]"
           TopLeft="385.833333333333,363">
@@ -31893,7 +31972,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -31927,175 +32008,14 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic Animal.Paths[Salida de combinación de mezcla]"
-          TopLeft="365.25,256">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65"
-              Start="0,0"
-              End="0,57.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic Animal.Paths[OLE DB Source Output1]"
-          TopLeft="507,80">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-11.5,52"
-              Start="0,0"
-              End="-11.5,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22"
-                    Point2="0,26"
-                    Point3="-4,26" />
-                  <mssgle:LineSegment
-                    End="-7.5,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-7.5,26"
-                    Point2="-11.5,26"
-                    Point3="-11.5,30" />
-                  <mssgle:LineSegment
-                    End="-11.5,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic Animal.Paths[OLE DB Source Output]"
-          TopLeft="250.777777777778,78.1111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="16.722222222222,59.8888888888889"
-              Start="0,0"
-              End="16.722222222222,52.3888888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.9444444444445" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.9444444444445"
-                    Point2="0,29.9444444444445"
-                    Point3="4,29.9444444444445" />
-                  <mssgle:LineSegment
-                    End="12.722222222222,29.9444444444445" />
-                  <mssgle:CubicBezierSegment
-                    Point1="12.722222222222,29.9444444444445"
-                    Point2="16.722222222222,29.9444444444445"
-                    Point3="16.722222222222,33.9444444444445" />
-                  <mssgle:LineSegment
-                    End="16.722222222222,52.3888888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic Animal.Paths[insert1]"
-          TopLeft="381.5,495">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,97.5"
-              Start="0,0"
-              End="0,90">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,90" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-12.94998046875,40.2744140625,25.8999609375,9.451171875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Basic Animal.Paths[insert]"
-          TopLeft="363.5,363">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-151,45"
-              Start="0,0"
-              End="-151,37.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.5"
-                    Point2="0,22.5"
-                    Point3="-4,22.5" />
-                  <mssgle:LineSegment
-                    End="-147,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-147,22.5"
-                    Point2="-151,22.5"
-                    Point3="-151,26.5" />
-                  <mssgle:LineSegment
-                    End="-151,37.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-88.44998046875,27.5,25.8999609375,9.451171875"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Basic Animal\OLE DB Destination 1">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Basic Animal\DDVMS Source">
     <Properties>
@@ -32135,43 +32055,56 @@ where OID = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Basic Animal\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\History Animal">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="119,42"
-          Id="Package\History Animal\Ordenar"
-          TopLeft="325,143" />
+          Size="177,42"
+          Id="Package\History Animal\OLE DB Destination"
+          TopLeft="28.222222222222,464.888888888889" />
         <NodeLayout
           Size="196,42"
           Id="Package\History Animal\Combinación de mezcla"
           TopLeft="167,255" />
         <NodeLayout
-          Size="204,42"
-          Id="Package\History Animal\DELPRO Destination"
-          TopLeft="291.222222222222,63.8888888888889" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\History Animal\DDVMS Source"
-          TopLeft="59,61" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\History Animal\OLE DB Destination"
-          TopLeft="28.222222222222,464.888888888889" />
+          Size="99,42"
+          Id="Package\History Animal\Sort"
+          TopLeft="91,149" />
         <NodeLayout
           Size="159,42"
           Id="Package\History Animal\Conditional Split"
           TopLeft="184.222222222222,343.888888888889" />
         <NodeLayout
-          Size="99,42"
-          Id="Package\History Animal\Sort"
-          TopLeft="91,149" />
-        <NodeLayout
           Size="186,42"
           Id="Package\History Animal\OLE DB Destination 1"
           TopLeft="246.222222222222,543.888888888889" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\History Animal\DELPRO Destination"
+          TopLeft="291.222222222222,63.8888888888889" />
+        <NodeLayout
+          Size="119,42"
+          Id="Package\History Animal\Ordenar"
+          TopLeft="325,143" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\History Animal\DDVMS Source"
+          TopLeft="59,61" />
         <NodeLayout
           Size="185,42"
           Id="Package\History Animal\Comando de OLE DB"
@@ -32180,6 +32113,40 @@ where OID = ?</property>
           Size="168,42"
           Id="Package\History Animal\Conditional Split 1"
           TopLeft="250,463" />
+        <EdgeLayout
+          Id="Package\History Animal.Paths[Salida de ordenación]"
+          TopLeft="384.5,185">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-88.1666666666667,70"
+              Start="0,0"
+              End="-88.1666666666667,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.6599190283401" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.6599190283401"
+                    Point2="0,41.6599190283401"
+                    Point3="-4,41.6599190283401" />
+                  <mssgle:LineSegment
+                    End="-84.1666666666667,41.6599190283401" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-84.1666666666667,41.6599190283401"
+                    Point2="-88.1666666666667,41.6599190283401"
+                    Point3="-88.1666666666667,45.6599190283401" />
+                  <mssgle:LineSegment
+                    End="-88.1666666666667,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\History Animal.Paths[Salida de combinación de mezcla]"
           TopLeft="264.361111111111,297">
@@ -32314,7 +32281,7 @@ where OID = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-73.8666471354167,37.0722291407223,25.8999609375,9.451171875"
+              BoundingBox="-73.8666471354165,37.0722291407223,25.8999609375,9.451171875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -32350,7 +32317,7 @@ where OID = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="4.19141493055566,36.3053825930538,36.72828125,11.609375"
+              BoundingBox="4.19141493055565,36.3053825930538,36.72828125,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -32424,69 +32391,9 @@ where OID = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal.Paths[Salida de ordenación]"
-          TopLeft="384.5,185">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-88.1666666666667,70"
-              Start="0,0"
-              End="-88.1666666666667,62.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.6599190283401" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37.6599190283401"
-                    Point2="0,41.6599190283401"
-                    Point3="-4,41.6599190283401" />
-                  <mssgle:LineSegment
-                    End="-84.1666666666667,41.6599190283401" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-84.1666666666667,41.6599190283401"
-                    Point2="-88.1666666666667,41.6599190283401"
-                    Point3="-88.1666666666667,45.6599190283401" />
-                  <mssgle:LineSegment
-                    End="-88.1666666666667,62.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\History Animal\DELPRO Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\History Animal\DDVMS Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\History Animal\OLE DB Destination">
     <Properties>
@@ -32513,6 +32420,32 @@ where OID = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\History Animal\DELPRO Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\History Animal\DDVMS Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\History Animal Daily Data">
     <LayoutInfo>
@@ -32527,6 +32460,10 @@ where OID = ?</property>
           Id="Package\History Animal Daily Data\Conditional Split"
           TopLeft="283,303" />
         <NodeLayout
+          Size="108,42"
+          Id="Package\History Animal Daily Data\Sort 1"
+          TopLeft="447,140" />
+        <NodeLayout
           Size="186,42"
           Id="Package\History Animal Daily Data\OLE DB Destination 1"
           TopLeft="409,570" />
@@ -32535,29 +32472,25 @@ where OID = ?</property>
           Id="Package\History Animal Daily Data\OLE DB Destination"
           TopLeft="124,408" />
         <NodeLayout
-          Size="99,42"
-          Id="Package\History Animal Daily Data\Sort"
-          TopLeft="221,133" />
-        <NodeLayout
           Size="156,42"
           Id="Package\History Animal Daily Data\DDVMS Source"
           TopLeft="172.777777777778,35.1111111111111" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\History Animal Daily Data\Sort 1"
-          TopLeft="447,140" />
         <NodeLayout
           Size="196,46"
           Id="Package\History Animal Daily Data\Merge Join 1"
           TopLeft="284,219" />
         <NodeLayout
-          Size="185,42"
-          Id="Package\History Animal Daily Data\Comando de OLE DB"
-          TopLeft="721,399" />
+          Size="99,42"
+          Id="Package\History Animal Daily Data\Sort"
+          TopLeft="221,133" />
         <NodeLayout
           Size="204,42"
           Id="Package\History Animal Daily Data\DELPRO Destination"
           TopLeft="405,38" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\History Animal Daily Data\Comando de OLE DB"
+          TopLeft="721,399" />
         <EdgeLayout
           Id="Package\History Animal Daily Data.Paths[updated]"
           TopLeft="387.666666666667,345">
@@ -32661,7 +32594,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32695,7 +32630,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32717,7 +32654,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32751,7 +32690,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32785,7 +32726,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32921,9 +32864,9 @@ where OID = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="119,42"
-          Id="Package\History Animal Lactation Info\Ordenar"
-          TopLeft="318,158" />
+          Size="99,42"
+          Id="Package\History Animal Lactation Info\Sort"
+          TopLeft="84,151" />
         <NodeLayout
           Size="196,42"
           Id="Package\History Animal Lactation Info\Combinación de mezcla"
@@ -32933,33 +32876,201 @@ where OID = ?</property>
           Id="Package\History Animal Lactation Info\DDVMS Source"
           TopLeft="59,61" />
         <NodeLayout
-          Size="99,42"
-          Id="Package\History Animal Lactation Info\Sort"
-          TopLeft="84,151" />
-        <NodeLayout
-          Size="168,42"
-          Id="Package\History Animal Lactation Info\Conditional Split 1"
-          TopLeft="254,450" />
-        <NodeLayout
           Size="186,42"
           Id="Package\History Animal Lactation Info\OLE DB Destination 1"
           TopLeft="257,564" />
         <NodeLayout
-          Size="159,42"
-          Id="Package\History Animal Lactation Info\Conditional Split"
-          TopLeft="171.222222222222,344.888888888889" />
+          Size="119,42"
+          Id="Package\History Animal Lactation Info\Ordenar"
+          TopLeft="318,158" />
         <NodeLayout
           Size="177,42"
           Id="Package\History Animal Lactation Info\OLE DB Destination"
           TopLeft="28,445" />
         <NodeLayout
+          Size="204,42"
+          Id="Package\History Animal Lactation Info\DELPRO Destination"
+          TopLeft="291.222222222222,64.8888888888889" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\History Animal Lactation Info\Conditional Split 1"
+          TopLeft="254,450" />
+        <NodeLayout
           Size="185,42"
           Id="Package\History Animal Lactation Info\Comando de OLE DB"
           TopLeft="510,462" />
         <NodeLayout
-          Size="204,42"
-          Id="Package\History Animal Lactation Info\DELPRO Destination"
-          TopLeft="291.222222222222,64.8888888888889" />
+          Size="159,42"
+          Id="Package\History Animal Lactation Info\Conditional Split"
+          TopLeft="171.222222222222,344.888888888889" />
+        <EdgeLayout
+          Id="Package\History Animal Lactation Info.Paths[update exist recods]"
+          TopLeft="422,471">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="88,12"
+              Start="0,0"
+              End="80.5,12">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="40,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="40,0"
+                    Point2="44,0"
+                    Point3="44,4" />
+                  <mssgle:LineSegment
+                    End="44,8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="44,8"
+                    Point2="44,12"
+                    Point3="48,12" />
+                  <mssgle:LineSegment
+                    End="80.5,12" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0.436269531249991,-17.609375,87.1274609375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\History Animal Lactation Info.Paths[Sort Output]"
+          TopLeft="133.5,193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="116.5,67"
+              Start="0,0"
+              End="116.5,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.5"
+                    Point2="0,33.5"
+                    Point3="4,33.5" />
+                  <mssgle:LineSegment
+                    End="112.5,33.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="112.5,33.5"
+                    Point2="116.5,33.5"
+                    Point3="116.5,37.5" />
+                  <mssgle:LineSegment
+                    End="116.5,59.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\History Animal Lactation Info.Paths[Salida de ordenación]"
+          TopLeft="377.5,200">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-96.1666666666667,60"
+              Start="0,0"
+              End="-96.1666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.7085020242915" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.7085020242915"
+                    Point2="0,35.7085020242915"
+                    Point3="-4,35.7085020242915" />
+                  <mssgle:LineSegment
+                    End="-92.1666666666667,35.7085020242915" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-92.1666666666667,35.7085020242915"
+                    Point2="-96.1666666666667,35.7085020242915"
+                    Point3="-96.1666666666667,39.7085020242915" />
+                  <mssgle:LineSegment
+                    End="-96.1666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\History Animal Lactation Info.Paths[Salida de combinación de mezcla]"
+          TopLeft="250.361111111111,302">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.888888888889"
+              Start="0,0"
+              End="0,35.388888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.388888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\History Animal Lactation Info.Paths[OLE DB Source Output1]"
+          TopLeft="393.222222222222,106.888888888889">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.722222222222,51.1111111111111"
+              Start="0,0"
+              End="-15.722222222222,43.6111111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.5555555555556" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.5555555555556"
+                    Point2="0,25.5555555555556"
+                    Point3="-4,25.5555555555556" />
+                  <mssgle:LineSegment
+                    End="-11.722222222222,25.5555555555556" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.722222222222,25.5555555555556"
+                    Point2="-15.722222222222,25.5555555555556"
+                    Point3="-15.722222222222,29.5555555555556" />
+                  <mssgle:LineSegment
+                    End="-15.722222222222,43.6111111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\History Animal Lactation Info.Paths[OLE DB Source Output]"
           TopLeft="135.25,103">
@@ -32979,7 +33090,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33088,166 +33201,6 @@ where OID = ?</property>
             <mssgm:EdgeLabel
               BoundingBox="12.6914149305556,30.6216964162169,36.72828125,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal Lactation Info.Paths[update exist recods]"
-          TopLeft="422,471">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="88,12"
-              Start="0,0"
-              End="80.5,12">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="40,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="40,0"
-                    Point2="44,0"
-                    Point3="44,4" />
-                  <mssgle:LineSegment
-                    End="44,8" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44,8"
-                    Point2="44,12"
-                    Point3="48,12" />
-                  <mssgle:LineSegment
-                    End="80.5,12" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0.436269531249991,-17.609375,87.1274609375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal Lactation Info.Paths[Sort Output]"
-          TopLeft="133.5,193">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116.5,67"
-              Start="0,0"
-              End="116.5,59.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.5"
-                    Point2="0,33.5"
-                    Point3="4,33.5" />
-                  <mssgle:LineSegment
-                    End="112.5,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.5,33.5"
-                    Point2="116.5,33.5"
-                    Point3="116.5,37.5" />
-                  <mssgle:LineSegment
-                    End="116.5,59.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal Lactation Info.Paths[Salida de ordenación]"
-          TopLeft="377.5,200">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-96.1666666666667,60"
-              Start="0,0"
-              End="-96.1666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.7085020242915" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.7085020242915"
-                    Point2="0,35.7085020242915"
-                    Point3="-4,35.7085020242915" />
-                  <mssgle:LineSegment
-                    End="-92.1666666666667,35.7085020242915" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-92.1666666666667,35.7085020242915"
-                    Point2="-96.1666666666667,35.7085020242915"
-                    Point3="-96.1666666666667,39.7085020242915" />
-                  <mssgle:LineSegment
-                    End="-96.1666666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal Lactation Info.Paths[Salida de combinación de mezcla]"
-          TopLeft="250.361111111111,302">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,42.888888888889"
-              Start="0,0"
-              End="0,35.388888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,35.388888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal Lactation Info.Paths[OLE DB Source Output1]"
-          TopLeft="393.222222222222,106.888888888889">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-15.722222222222,51.1111111111111"
-              Start="0,0"
-              End="-15.722222222222,43.6111111111111">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.5555555555556" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.5555555555556"
-                    Point2="0,25.5555555555556"
-                    Point3="-4,25.5555555555556" />
-                  <mssgle:LineSegment
-                    End="-11.722222222222,25.5555555555556" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-11.722222222222,25.5555555555556"
-                    Point2="-15.722222222222,25.5555555555556"
-                    Point3="-15.722222222222,29.5555555555556" />
-                  <mssgle:LineSegment
-                    End="-15.722222222222,43.6111111111111" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package3"
   DTS:PackageType="5"
-  DTS:VersionBuild="47"
-  DTS:VersionGUID="{FBCF8469-2E2F-459E-80A0-AA162B344753}">
+  DTS:VersionBuild="51"
+  DTS:VersionGUID="{FEAD068E-418C-49FD-86FB-0E7748F2CDFF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -23,7 +23,7 @@
       DTS:ObjectName="DateFrom">
       <DTS:Property
         DTS:DataType="7"
-        DTS:Name="ParameterValue">6/1/2016</DTS:Property>
+        DTS:Name="ParameterValue">6/1/2015</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -32,7 +32,7 @@
       DTS:ObjectName="DateTo">
       <DTS:Property
         DTS:DataType="7"
-        DTS:Name="ParameterValue">1/1/2017</DTS:Property>
+        DTS:Name="ParameterValue">1/1/2016</DTS:Property>
     </DTS:PackageParameter>
   </DTS:PackageParameters>
   <DTS:Variables />
@@ -1707,17 +1707,6 @@ where OID = ?</property>
                   name="Entrada de división condicional">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Animal Daily\División condicional 1.Inputs[Entrada de división condicional].Columns[OID]"
-                      cachedDataType="i4"
-                      cachedName="OID"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OID]" />
-                    <inputColumn
-                      refId="Package\Animal Daily\División condicional 1.Inputs[Entrada de división condicional].Columns[OID (1)]"
-                      cachedDataType="i4"
-                      cachedName="OID (1)"
-                      lineageId="Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OID (1)]" />
-                    <inputColumn
                       refId="Package\Animal Daily\División condicional 1.Inputs[Entrada de división condicional].Columns[BasicAnimal]"
                       cachedDataType="i4"
                       cachedName="BasicAnimal"
@@ -1876,13 +1865,13 @@ where OID = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
-                      name="Expression">(([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OID]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OID (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Date]},"1996-10-18") != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Date (1)]},"1996-10-18"))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AnimalGroup]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AnimalGroup (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DIM]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DIM (1)]},0)) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TotalYield]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TotalYield (1)]},0)))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[IsYieldValid]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[IsYieldValid (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Duration]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Duration (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AvgYieldPrev7d]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AvgYieldPrev7d (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ConcentratesConsumed]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ConcentratesConsumed (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[RoughageConsumed]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[RoughageConsumed (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[GCRecord]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[GCRecord (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DSLC]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DSLC (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]},"1996-10-18") != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp (1)]},"1996-10-18"))))</property>
+                      name="Expression">(([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Date]},"1996-10-18") != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Date (1)]},"1996-10-18"))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AnimalGroup]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AnimalGroup (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DIM]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DIM (1)]},0)) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TotalYield]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TotalYield (1)]},0)))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[IsYieldValid]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[IsYieldValid (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Duration]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Duration (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AvgYieldPrev7d]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AvgYieldPrev7d (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ConcentratesConsumed]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ConcentratesConsumed (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[RoughageConsumed]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[RoughageConsumed (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[GCRecord]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[GCRecord (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DSLC]},0) != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DSLC (1)]},0))) || ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]},"1996-10-18") != ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp (1)]},"1996-10-18"))))</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
                       expressionType="Notify"
-                      name="FriendlyExpression">((REPLACENULL(OID,0) != (REPLACENULL([OID (1)],0))) || (REPLACENULL(Date,"1996-10-18") != (REPLACENULL([Date (1)],"1996-10-18"))) || (REPLACENULL(BasicAnimal,0) != (REPLACENULL([BasicAnimal (1)],0))) || (REPLACENULL(AnimalGroup,0) != (REPLACENULL([AnimalGroup (1)],0))) || (REPLACENULL(DIM,0) != (REPLACENULL([DIM (1)],0)) || (REPLACENULL(LactationNumber,0) != (REPLACENULL([LactationNumber (1)],0))) || (REPLACENULL(TotalYield,0) != (REPLACENULL([TotalYield (1)],0)))) || (REPLACENULL(IsYieldValid,0) != (REPLACENULL([IsYieldValid (1)],0))) || (REPLACENULL(Duration,0) != (REPLACENULL([Duration (1)],0))) || (REPLACENULL(AvgYieldPrev7d,0) != (REPLACENULL([AvgYieldPrev7d (1)],0))) || (REPLACENULL(ConcentratesConsumed,0) != (REPLACENULL([ConcentratesConsumed (1)],0))) || (REPLACENULL(RoughageConsumed,0) != (REPLACENULL([RoughageConsumed (1)],0))) || (REPLACENULL(GCRecord,0) != (REPLACENULL([GCRecord (1)],0))) || (REPLACENULL(DSLC,0) != (REPLACENULL([DSLC (1)],0))) || (REPLACENULL(SystemEntryTimeStamp,"1996-10-18") != (REPLACENULL([SystemEntryTimeStamp (1)],"1996-10-18"))))</property>
+                      name="FriendlyExpression">((REPLACENULL(Date,"1996-10-18") != (REPLACENULL([Date (1)],"1996-10-18"))) || (REPLACENULL(BasicAnimal,0) != (REPLACENULL([BasicAnimal (1)],0))) || (REPLACENULL(AnimalGroup,0) != (REPLACENULL([AnimalGroup (1)],0))) || (REPLACENULL(DIM,0) != (REPLACENULL([DIM (1)],0)) || (REPLACENULL(LactationNumber,0) != (REPLACENULL([LactationNumber (1)],0))) || (REPLACENULL(TotalYield,0) != (REPLACENULL([TotalYield (1)],0)))) || (REPLACENULL(IsYieldValid,0) != (REPLACENULL([IsYieldValid (1)],0))) || (REPLACENULL(Duration,0) != (REPLACENULL([Duration (1)],0))) || (REPLACENULL(AvgYieldPrev7d,0) != (REPLACENULL([AvgYieldPrev7d (1)],0))) || (REPLACENULL(ConcentratesConsumed,0) != (REPLACENULL([ConcentratesConsumed (1)],0))) || (REPLACENULL(RoughageConsumed,0) != (REPLACENULL([RoughageConsumed (1)],0))) || (REPLACENULL(GCRecord,0) != (REPLACENULL([GCRecord (1)],0))) || (REPLACENULL(DSLC,0) != (REPLACENULL([DSLC (1)],0))) || (REPLACENULL(SystemEntryTimeStamp,"1996-10-18") != (REPLACENULL([SystemEntryTimeStamp (1)],"1996-10-18"))))</property>
                     <property
                       dataType="System.Int32"
                       description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
@@ -1891,12 +1880,12 @@ where OID = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Animal Daily\División condicional 1.Outputs[update]"
+                  refId="Package\Animal Daily\División condicional 1.Outputs[update exist record]"
                   description="Salida 2 de la transformación División condicional"
                   errorOrTruncationOperation="Cálculo"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="update"
+                  name="update exist record"
                   synchronousInputId="Package\Animal Daily\División condicional 1.Inputs[Entrada de división condicional]"
                   truncationRowDisposition="FailComponent">
                   <properties>
@@ -1904,13 +1893,13 @@ where OID = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
-                      name="Expression">(([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OID]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[OID (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Date]},"1996-10-18") == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Date (1)]},"1996-10-18"))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AnimalGroup]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AnimalGroup (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DIM]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DIM (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TotalYield]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TotalYield (1)]},0)))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[IsYieldValid]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[IsYieldValid (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Duration]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Duration (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AvgYieldPrev7d]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AvgYieldPrev7d (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ConcentratesConsumed]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ConcentratesConsumed (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[RoughageConsumed]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[RoughageConsumed (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[GCRecord]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[GCRecord (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DSLC]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DSLC (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]},"1996-10-18") == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp (1)]},"1996-10-18"))))</property>
+                      name="Expression">(([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Date]},"1996-10-18") == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Date (1)]},"1996-10-18"))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AnimalGroup]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AnimalGroup (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DIM]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DIM (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[LactationNumber (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TotalYield]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[TotalYield (1)]},0)))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[IsYieldValid]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[IsYieldValid (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Duration]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Duration (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AvgYieldPrev7d]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[AvgYieldPrev7d (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ConcentratesConsumed]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[ConcentratesConsumed (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[RoughageConsumed]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[RoughageConsumed (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[GCRecord]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[GCRecord (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DSLC]},0) == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[DSLC (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]},"1996-10-18") == ([REPLACENULL](#{Package\Animal Daily\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp (1)]},"1996-10-18"))))</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
                       expressionType="Notify"
-                      name="FriendlyExpression">((REPLACENULL(OID,0) == (REPLACENULL([OID (1)],0))) &amp;&amp; (REPLACENULL(Date,"1996-10-18") == (REPLACENULL([Date (1)],"1996-10-18"))) &amp;&amp; (REPLACENULL(BasicAnimal,0) == (REPLACENULL([BasicAnimal (1)],0))) &amp;&amp; (REPLACENULL(AnimalGroup,0) == (REPLACENULL([AnimalGroup (1)],0))) &amp;&amp; (REPLACENULL(DIM,0) == (REPLACENULL([DIM (1)],0)) &amp;&amp; (REPLACENULL(LactationNumber,0) == (REPLACENULL([LactationNumber (1)],0))) &amp;&amp; (REPLACENULL(TotalYield,0) == (REPLACENULL([TotalYield (1)],0)))) &amp;&amp; (REPLACENULL(IsYieldValid,0) == (REPLACENULL([IsYieldValid (1)],0))) &amp;&amp; (REPLACENULL(Duration,0) == (REPLACENULL([Duration (1)],0))) &amp;&amp; (REPLACENULL(AvgYieldPrev7d,0) == (REPLACENULL([AvgYieldPrev7d (1)],0))) &amp;&amp; (REPLACENULL(ConcentratesConsumed,0) == (REPLACENULL([ConcentratesConsumed (1)],0))) &amp;&amp; (REPLACENULL(RoughageConsumed,0) == (REPLACENULL([RoughageConsumed (1)],0))) &amp;&amp; (REPLACENULL(GCRecord,0) == (REPLACENULL([GCRecord (1)],0))) &amp;&amp; (REPLACENULL(DSLC,0) == (REPLACENULL([DSLC (1)],0))) &amp;&amp; (REPLACENULL(SystemEntryTimeStamp,"1996-10-18") == (REPLACENULL([SystemEntryTimeStamp (1)],"1996-10-18"))))</property>
+                      name="FriendlyExpression">((REPLACENULL(Date,"1996-10-18") == (REPLACENULL([Date (1)],"1996-10-18"))) &amp;&amp; (REPLACENULL(BasicAnimal,0) == (REPLACENULL([BasicAnimal (1)],0))) &amp;&amp; (REPLACENULL(AnimalGroup,0) == (REPLACENULL([AnimalGroup (1)],0))) &amp;&amp; (REPLACENULL(DIM,0) == (REPLACENULL([DIM (1)],0)) &amp;&amp; (REPLACENULL(LactationNumber,0) == (REPLACENULL([LactationNumber (1)],0))) &amp;&amp; (REPLACENULL(TotalYield,0) == (REPLACENULL([TotalYield (1)],0)))) &amp;&amp; (REPLACENULL(IsYieldValid,0) == (REPLACENULL([IsYieldValid (1)],0))) &amp;&amp; (REPLACENULL(Duration,0) == (REPLACENULL([Duration (1)],0))) &amp;&amp; (REPLACENULL(AvgYieldPrev7d,0) == (REPLACENULL([AvgYieldPrev7d (1)],0))) &amp;&amp; (REPLACENULL(ConcentratesConsumed,0) == (REPLACENULL([ConcentratesConsumed (1)],0))) &amp;&amp; (REPLACENULL(RoughageConsumed,0) == (REPLACENULL([RoughageConsumed (1)],0))) &amp;&amp; (REPLACENULL(GCRecord,0) == (REPLACENULL([GCRecord (1)],0))) &amp;&amp; (REPLACENULL(DSLC,0) == (REPLACENULL([DSLC (1)],0))) &amp;&amp; (REPLACENULL(SystemEntryTimeStamp,"1996-10-18") == (REPLACENULL([SystemEntryTimeStamp (1)],"1996-10-18"))))</property>
                     <property
                       dataType="System.Int32"
                       description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
@@ -3569,7 +3558,7 @@ where OID = ?</property>
               refId="Package\Animal Daily.Paths[update1]"
               endId="Package\Animal Daily\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]"
               name="update"
-              startId="Package\Animal Daily\División condicional 1.Outputs[update]" />
+              startId="Package\Animal Daily\División condicional 1.Outputs[update exist record]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -5910,17 +5899,6 @@ where OID = ?</property>
                   name="Entrada de división condicional">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Session Milk Yield\División condicional 1.Inputs[Entrada de división condicional].Columns[OID]"
-                      cachedDataType="i4"
-                      cachedName="OID"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[OID]" />
-                    <inputColumn
-                      refId="Package\Session Milk Yield\División condicional 1.Inputs[Entrada de división condicional].Columns[OID (1)]"
-                      cachedDataType="i4"
-                      cachedName="OID (1)"
-                      lineageId="Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[OID (1)]" />
-                    <inputColumn
                       refId="Package\Session Milk Yield\División condicional 1.Inputs[Entrada de división condicional].Columns[ObjectType]"
                       cachedDataType="i4"
                       cachedName="ObjectType"
@@ -6159,13 +6137,13 @@ where OID = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
-                      name="Expression">(([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[OID]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[OID (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BeginTime]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BeginTime (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AnimalDaily]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AnimalDaily (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[EndTime]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[EndTime (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MilkingDevice]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MilkingDevice (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[PreviousEndTime]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[PreviousEndTime (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SessionNo]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SessionNo (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[TotalYield]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[TotalYield (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[Destination]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[Destination (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AvgConductivity]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AvgConductivity (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxConductivity]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxConductivity (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageConductivity7Days]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageConductivity7Days (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[RelativeConductivity]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[RelativeConductivity (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageBlood]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageBlood (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxBlood]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxBlood (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ModifiedSource]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ModifiedSource (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ExpectedYield]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ExpectedYield (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTube]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTube (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubeRack]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubeRack (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubePosition]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubePosition (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ObjectType]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ObjectType (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]},"1996-10-18") != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp (1)]},"1996-10-18"))))</property>
+                      name="Expression">(([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BeginTime]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BeginTime (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AnimalDaily]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AnimalDaily (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[EndTime]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[EndTime (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MilkingDevice]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MilkingDevice (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[PreviousEndTime]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[PreviousEndTime (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SessionNo]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SessionNo (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[TotalYield]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[TotalYield (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[Destination]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[Destination (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AvgConductivity]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AvgConductivity (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxConductivity]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxConductivity (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageConductivity7Days]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageConductivity7Days (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[RelativeConductivity]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[RelativeConductivity (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageBlood]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageBlood (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxBlood]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxBlood (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ModifiedSource]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ModifiedSource (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ExpectedYield]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ExpectedYield (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTube]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTube (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubeRack]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubeRack (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubePosition]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubePosition (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ObjectType]},0)) != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ObjectType (1)]},0)) || ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]},"1996-10-18") != ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp (1)]},"1996-10-18"))))</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
                       expressionType="Notify"
-                      name="FriendlyExpression">((REPLACENULL(OID,0)) != (REPLACENULL([OID (1)],0)) || (REPLACENULL(BeginTime,0)) != (REPLACENULL([BeginTime (1)],0)) || (REPLACENULL(BasicAnimal,0)) != (REPLACENULL([BasicAnimal (1)],0)) || (REPLACENULL(AnimalDaily,0)) != (REPLACENULL([AnimalDaily (1)],0)) || (REPLACENULL(EndTime,0)) != (REPLACENULL([EndTime (1)],0)) || (REPLACENULL(MilkingDevice,0)) != (REPLACENULL([MilkingDevice (1)],0)) || (REPLACENULL(PreviousEndTime,0)) != (REPLACENULL([PreviousEndTime (1)],0)) || (REPLACENULL(SessionNo,0)) != (REPLACENULL([SessionNo (1)],0)) || (REPLACENULL(TotalYield,0)) != (REPLACENULL([TotalYield (1)],0)) || (REPLACENULL(Destination,0)) != (REPLACENULL([Destination (1)],0)) || (REPLACENULL(AvgConductivity,0)) != (REPLACENULL([AvgConductivity (1)],0)) || (REPLACENULL(MaxConductivity,0)) != (REPLACENULL([MaxConductivity (1)],0)) || (REPLACENULL(AverageConductivity7Days,0)) != (REPLACENULL([AverageConductivity7Days (1)],0)) || (REPLACENULL(RelativeConductivity,0)) != (REPLACENULL([RelativeConductivity (1)],0)) || (REPLACENULL(AverageBlood,0)) != (REPLACENULL([AverageBlood (1)],0)) || (REPLACENULL(MaxBlood,0)) != (REPLACENULL([MaxBlood (1)],0)) || (REPLACENULL(ModifiedSource,0)) != (REPLACENULL([ModifiedSource (1)],0)) || (REPLACENULL(ExpectedYield,0)) != (REPLACENULL([ExpectedYield (1)],0)) || (REPLACENULL(SampleTube,0)) != (REPLACENULL([SampleTube (1)],0)) || (REPLACENULL(SampleTubeRack,0)) != (REPLACENULL([SampleTubeRack (1)],0)) || (REPLACENULL(SampleTubePosition,0)) != (REPLACENULL([SampleTubePosition (1)],0)) || (REPLACENULL(ObjectType,0)) != (REPLACENULL([ObjectType (1)],0)) || (REPLACENULL(SystemEntryTimeStamp,"1996-10-18") != (REPLACENULL([SystemEntryTimeStamp (1)],"1996-10-18"))))</property>
+                      name="FriendlyExpression">((REPLACENULL(BeginTime,0)) != (REPLACENULL([BeginTime (1)],0)) || (REPLACENULL(BasicAnimal,0)) != (REPLACENULL([BasicAnimal (1)],0)) || (REPLACENULL(AnimalDaily,0)) != (REPLACENULL([AnimalDaily (1)],0)) || (REPLACENULL(EndTime,0)) != (REPLACENULL([EndTime (1)],0)) || (REPLACENULL(MilkingDevice,0)) != (REPLACENULL([MilkingDevice (1)],0)) || (REPLACENULL(PreviousEndTime,0)) != (REPLACENULL([PreviousEndTime (1)],0)) || (REPLACENULL(SessionNo,0)) != (REPLACENULL([SessionNo (1)],0)) || (REPLACENULL(TotalYield,0)) != (REPLACENULL([TotalYield (1)],0)) || (REPLACENULL(Destination,0)) != (REPLACENULL([Destination (1)],0)) || (REPLACENULL(AvgConductivity,0)) != (REPLACENULL([AvgConductivity (1)],0)) || (REPLACENULL(MaxConductivity,0)) != (REPLACENULL([MaxConductivity (1)],0)) || (REPLACENULL(AverageConductivity7Days,0)) != (REPLACENULL([AverageConductivity7Days (1)],0)) || (REPLACENULL(RelativeConductivity,0)) != (REPLACENULL([RelativeConductivity (1)],0)) || (REPLACENULL(AverageBlood,0)) != (REPLACENULL([AverageBlood (1)],0)) || (REPLACENULL(MaxBlood,0)) != (REPLACENULL([MaxBlood (1)],0)) || (REPLACENULL(ModifiedSource,0)) != (REPLACENULL([ModifiedSource (1)],0)) || (REPLACENULL(ExpectedYield,0)) != (REPLACENULL([ExpectedYield (1)],0)) || (REPLACENULL(SampleTube,0)) != (REPLACENULL([SampleTube (1)],0)) || (REPLACENULL(SampleTubeRack,0)) != (REPLACENULL([SampleTubeRack (1)],0)) || (REPLACENULL(SampleTubePosition,0)) != (REPLACENULL([SampleTubePosition (1)],0)) || (REPLACENULL(ObjectType,0)) != (REPLACENULL([ObjectType (1)],0)) || (REPLACENULL(SystemEntryTimeStamp,"1996-10-18") != (REPLACENULL([SystemEntryTimeStamp (1)],"1996-10-18"))))</property>
                     <property
                       dataType="System.Int32"
                       description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
@@ -6174,12 +6152,12 @@ where OID = ?</property>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\Session Milk Yield\División condicional 1.Outputs[update]"
+                  refId="Package\Session Milk Yield\División condicional 1.Outputs[update exist record]"
                   description="Salida 2 de la transformación División condicional"
                   errorOrTruncationOperation="Cálculo"
                   errorRowDisposition="FailComponent"
                   exclusionGroup="1"
-                  name="update"
+                  name="update exist record"
                   synchronousInputId="Package\Session Milk Yield\División condicional 1.Inputs[Entrada de división condicional]"
                   truncationRowDisposition="FailComponent">
                   <properties>
@@ -6187,13 +6165,13 @@ where OID = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
-                      name="Expression">(([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[OID]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[OID (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BeginTime]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BeginTime (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AnimalDaily]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AnimalDaily (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[EndTime]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[EndTime (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MilkingDevice]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MilkingDevice (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[PreviousEndTime]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[PreviousEndTime (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SessionNo]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SessionNo (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[TotalYield]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[TotalYield (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[Destination]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[Destination (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AvgConductivity]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AvgConductivity (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxConductivity]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxConductivity (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageConductivity7Days]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageConductivity7Days (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[RelativeConductivity]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[RelativeConductivity (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageBlood]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageBlood (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxBlood]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxBlood (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ModifiedSource]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ModifiedSource (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ExpectedYield]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ExpectedYield (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTube]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTube (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubeRack]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubeRack (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubePosition]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubePosition (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ObjectType]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ObjectType (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]},"1996-10-18") == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp (1)]},"1996-10-18"))))</property>
+                      name="Expression">(([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BeginTime]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BeginTime (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[BasicAnimal (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AnimalDaily]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AnimalDaily (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[EndTime]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[EndTime (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MilkingDevice]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MilkingDevice (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[PreviousEndTime]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[PreviousEndTime (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SessionNo]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SessionNo (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[TotalYield]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[TotalYield (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[Destination]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[Destination (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AvgConductivity]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AvgConductivity (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxConductivity]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxConductivity (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageConductivity7Days]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageConductivity7Days (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[RelativeConductivity]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[RelativeConductivity (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageBlood]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[AverageBlood (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxBlood]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[MaxBlood (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ModifiedSource]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ModifiedSource (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ExpectedYield]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ExpectedYield (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTube]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTube (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubeRack]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubeRack (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubePosition]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SampleTubePosition (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ObjectType]},0)) == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[ObjectType (1)]},0)) &amp;&amp; ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]},"1996-10-18") == ([REPLACENULL](#{Package\Session Milk Yield\Combinación de mezcla 1.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp (1)]},"1996-10-18"))))</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
                       expressionType="Notify"
-                      name="FriendlyExpression">((REPLACENULL(OID,0)) == (REPLACENULL([OID (1)],0)) &amp;&amp; (REPLACENULL(BeginTime,0)) == (REPLACENULL([BeginTime (1)],0)) &amp;&amp; (REPLACENULL(BasicAnimal,0)) == (REPLACENULL([BasicAnimal (1)],0)) &amp;&amp; (REPLACENULL(AnimalDaily,0)) == (REPLACENULL([AnimalDaily (1)],0)) &amp;&amp; (REPLACENULL(EndTime,0)) == (REPLACENULL([EndTime (1)],0)) &amp;&amp; (REPLACENULL(MilkingDevice,0)) == (REPLACENULL([MilkingDevice (1)],0)) &amp;&amp; (REPLACENULL(PreviousEndTime,0)) == (REPLACENULL([PreviousEndTime (1)],0)) &amp;&amp; (REPLACENULL(SessionNo,0)) == (REPLACENULL([SessionNo (1)],0)) &amp;&amp; (REPLACENULL(TotalYield,0)) == (REPLACENULL([TotalYield (1)],0)) &amp;&amp; (REPLACENULL(Destination,0)) == (REPLACENULL([Destination (1)],0)) &amp;&amp; (REPLACENULL(AvgConductivity,0)) == (REPLACENULL([AvgConductivity (1)],0)) &amp;&amp; (REPLACENULL(MaxConductivity,0)) == (REPLACENULL([MaxConductivity (1)],0)) &amp;&amp; (REPLACENULL(AverageConductivity7Days,0)) == (REPLACENULL([AverageConductivity7Days (1)],0)) &amp;&amp; (REPLACENULL(RelativeConductivity,0)) == (REPLACENULL([RelativeConductivity (1)],0)) &amp;&amp; (REPLACENULL(AverageBlood,0)) == (REPLACENULL([AverageBlood (1)],0)) &amp;&amp; (REPLACENULL(MaxBlood,0)) == (REPLACENULL([MaxBlood (1)],0)) &amp;&amp; (REPLACENULL(ModifiedSource,0)) == (REPLACENULL([ModifiedSource (1)],0)) &amp;&amp; (REPLACENULL(ExpectedYield,0)) == (REPLACENULL([ExpectedYield (1)],0)) &amp;&amp; (REPLACENULL(SampleTube,0)) == (REPLACENULL([SampleTube (1)],0)) &amp;&amp; (REPLACENULL(SampleTubeRack,0)) == (REPLACENULL([SampleTubeRack (1)],0)) &amp;&amp; (REPLACENULL(SampleTubePosition,0)) == (REPLACENULL([SampleTubePosition (1)],0)) &amp;&amp; (REPLACENULL(ObjectType,0)) == (REPLACENULL([ObjectType (1)],0)) &amp;&amp; (REPLACENULL(SystemEntryTimeStamp,"1996-10-18") == (REPLACENULL([SystemEntryTimeStamp (1)],"1996-10-18"))))</property>
+                      name="FriendlyExpression">((REPLACENULL(BeginTime,0)) == (REPLACENULL([BeginTime (1)],0)) &amp;&amp; (REPLACENULL(BasicAnimal,0)) == (REPLACENULL([BasicAnimal (1)],0)) &amp;&amp; (REPLACENULL(AnimalDaily,0)) == (REPLACENULL([AnimalDaily (1)],0)) &amp;&amp; (REPLACENULL(EndTime,0)) == (REPLACENULL([EndTime (1)],0)) &amp;&amp; (REPLACENULL(MilkingDevice,0)) == (REPLACENULL([MilkingDevice (1)],0)) &amp;&amp; (REPLACENULL(PreviousEndTime,0)) == (REPLACENULL([PreviousEndTime (1)],0)) &amp;&amp; (REPLACENULL(SessionNo,0)) == (REPLACENULL([SessionNo (1)],0)) &amp;&amp; (REPLACENULL(TotalYield,0)) == (REPLACENULL([TotalYield (1)],0)) &amp;&amp; (REPLACENULL(Destination,0)) == (REPLACENULL([Destination (1)],0)) &amp;&amp; (REPLACENULL(AvgConductivity,0)) == (REPLACENULL([AvgConductivity (1)],0)) &amp;&amp; (REPLACENULL(MaxConductivity,0)) == (REPLACENULL([MaxConductivity (1)],0)) &amp;&amp; (REPLACENULL(AverageConductivity7Days,0)) == (REPLACENULL([AverageConductivity7Days (1)],0)) &amp;&amp; (REPLACENULL(RelativeConductivity,0)) == (REPLACENULL([RelativeConductivity (1)],0)) &amp;&amp; (REPLACENULL(AverageBlood,0)) == (REPLACENULL([AverageBlood (1)],0)) &amp;&amp; (REPLACENULL(MaxBlood,0)) == (REPLACENULL([MaxBlood (1)],0)) &amp;&amp; (REPLACENULL(ModifiedSource,0)) == (REPLACENULL([ModifiedSource (1)],0)) &amp;&amp; (REPLACENULL(ExpectedYield,0)) == (REPLACENULL([ExpectedYield (1)],0)) &amp;&amp; (REPLACENULL(SampleTube,0)) == (REPLACENULL([SampleTube (1)],0)) &amp;&amp; (REPLACENULL(SampleTubeRack,0)) == (REPLACENULL([SampleTubeRack (1)],0)) &amp;&amp; (REPLACENULL(SampleTubePosition,0)) == (REPLACENULL([SampleTubePosition (1)],0)) &amp;&amp; (REPLACENULL(ObjectType,0)) == (REPLACENULL([ObjectType (1)],0)) &amp;&amp; (REPLACENULL(SystemEntryTimeStamp,"1996-10-18") == (REPLACENULL([SystemEntryTimeStamp (1)],"1996-10-18"))))</property>
                     <property
                       dataType="System.Int32"
                       description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
@@ -8632,7 +8610,7 @@ where OID = ?</property>
               refId="Package\Session Milk Yield.Paths[update1]"
               endId="Package\Session Milk Yield\Comando de OLE DB.Inputs[Entrada de comando de OLE DB]"
               name="update"
-              startId="Package\Session Milk Yield\División condicional 1.Outputs[update]" />
+              startId="Package\Session Milk Yield\División condicional 1.Outputs[update exist record]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -8873,29 +8851,9 @@ where OID = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="128,42"
-          Id="Package\Animal Daily\Ordenar 1"
-          TopLeft="437,139" />
-        <NodeLayout
           Size="196,42"
           Id="Package\Animal Daily\Combinación de mezcla"
           TopLeft="290,229" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Animal Daily\DDVMS Source"
-          TopLeft="172.777777777778,36.1111111111111" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Animal Daily\OLE DB Destination"
-          TopLeft="126,408" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Animal Daily\OLE DB Destination 1"
-          TopLeft="279,616.5" />
-        <NodeLayout
-          Size="119,42"
-          Id="Package\Animal Daily\Ordenar"
-          TopLeft="210,138" />
         <NodeLayout
           Size="176,42"
           Id="Package\Animal Daily\División condicional"
@@ -8905,13 +8863,33 @@ where OID = ?</property>
           Id="Package\Animal Daily\DELPRO Destination"
           TopLeft="405,38" />
         <NodeLayout
-          Size="185,42"
-          Id="Package\Animal Daily\Comando de OLE DB"
-          TopLeft="529,585.5" />
+          Size="119,42"
+          Id="Package\Animal Daily\Ordenar"
+          TopLeft="210,138" />
         <NodeLayout
           Size="185,42"
           Id="Package\Animal Daily\División condicional 1"
           TopLeft="365,454" />
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Animal Daily\Ordenar 1"
+          TopLeft="437,139" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Animal Daily\OLE DB Destination"
+          TopLeft="126,408" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Animal Daily\OLE DB Destination 1"
+          TopLeft="279,616.5" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Animal Daily\DDVMS Source"
+          TopLeft="172.777777777778,36.1111111111111" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Animal Daily\Comando de OLE DB"
+          TopLeft="529,585.5" />
         <EdgeLayout
           Id="Package\Animal Daily.Paths[update1]"
           TopLeft="487,496">
@@ -8944,7 +8922,7 @@ where OID = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="51.4475,41.2604501607717,31.605,11.609375"
+              BoundingBox="24.355859375,41.2604501607717,85.78828125,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9206,7 +9184,7 @@ where OID = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Animal Daily\DDVMS Source">
+    design-time-name="Package\Animal Daily\DELPRO Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9245,7 +9223,7 @@ where OID = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Animal Daily\DELPRO Destination">
+    design-time-name="Package\Animal Daily\DDVMS Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9263,45 +9241,81 @@ where OID = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="176,42"
-          Id="Package\Session Milk Yield\División condicional"
-          TopLeft="286,327" />
+          Size="128,42"
+          Id="Package\Session Milk Yield\Ordenar 1"
+          TopLeft="444,137" />
         <NodeLayout
           Size="205,42"
           Id="Package\Session Milk Yield\Combinación de mezcla 1"
           TopLeft="271,233" />
         <NodeLayout
-          Size="128,42"
-          Id="Package\Session Milk Yield\Ordenar 1"
-          TopLeft="444,137" />
-        <NodeLayout
-          Size="119,42"
-          Id="Package\Session Milk Yield\Ordenar"
-          TopLeft="191,132" />
-        <NodeLayout
           Size="185,42"
           Id="Package\Session Milk Yield\División condicional 1"
           TopLeft="365,454" />
-        <NodeLayout
-          Size="204,42"
-          Id="Package\Session Milk Yield\DELPRO Destination"
-          TopLeft="405,38" />
         <NodeLayout
           Size="177,42"
           Id="Package\Session Milk Yield\OLE DB Destination"
           TopLeft="126,408" />
         <NodeLayout
+          Size="204,42"
+          Id="Package\Session Milk Yield\DELPRO Destination"
+          TopLeft="405,38" />
+        <NodeLayout
           Size="186,42"
           Id="Package\Session Milk Yield\OLE DB Destination 1"
           TopLeft="287,592.5" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Session Milk Yield\División condicional"
+          TopLeft="286,327" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Session Milk Yield\DDVMS Source"
+          TopLeft="172.777777777778,36.1111111111111" />
         <NodeLayout
           Size="185,42"
           Id="Package\Session Milk Yield\Comando de OLE DB"
           TopLeft="529,585.5" />
         <NodeLayout
-          Size="156,42"
-          Id="Package\Session Milk Yield\DDVMS Source"
-          TopLeft="172.777777777778,36.1111111111111" />
+          Size="119,42"
+          Id="Package\Session Milk Yield\Ordenar"
+          TopLeft="191,132" />
+        <EdgeLayout
+          Id="Package\Session Milk Yield.Paths[update1]"
+          TopLeft="487,496">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="134.5,89.5"
+              Start="0,0"
+              End="134.5,82">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.2604501607717" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.2604501607717"
+                    Point2="0,36.2604501607717"
+                    Point3="4,36.2604501607717" />
+                  <mssgle:LineSegment
+                    End="130.5,36.2604501607717" />
+                  <mssgle:CubicBezierSegment
+                    Point1="130.5,36.2604501607717"
+                    Point2="134.5,36.2604501607717"
+                    Point3="134.5,40.2604501607717" />
+                  <mssgle:LineSegment
+                    End="134.5,82" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="24.355859375,41.2604501607717,85.78828125,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Session Milk Yield.Paths[update]"
           TopLeft="402,369">
@@ -9544,47 +9558,11 @@ where OID = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Session Milk Yield.Paths[update1]"
-          TopLeft="487,496">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="134.5,89.5"
-              Start="0,0"
-              End="134.5,82">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,32.2604501607717" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,32.2604501607717"
-                    Point2="0,36.2604501607717"
-                    Point3="4,36.2604501607717" />
-                  <mssgle:LineSegment
-                    End="130.5,36.2604501607717" />
-                  <mssgle:CubicBezierSegment
-                    Point1="130.5,36.2604501607717"
-                    Point2="134.5,36.2604501607717"
-                    Point3="134.5,40.2604501607717" />
-                  <mssgle:LineSegment
-                    End="134.5,82" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="51.4475,41.2604501607717,31.605,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Session Milk Yield\DELPRO Destination">
+    design-time-name="Package\Session Milk Yield\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -9597,7 +9575,7 @@ where OID = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Session Milk Yield\OLE DB Destination">
+    design-time-name="Package\Session Milk Yield\DELPRO Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
