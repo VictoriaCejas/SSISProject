@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Stage1"
   DTS:PackageType="5"
-  DTS:VersionBuild="194"
-  DTS:VersionGUID="{CCEADA30-2D28-4FB7-9BDD-2C53EFAE144F}">
+  DTS:VersionBuild="200"
+  DTS:VersionGUID="{1A205EE2-3254-4455-BB30-20EA31702364}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:PackageParameters>
@@ -23,7 +23,7 @@
       DTS:ObjectName="DateFrom">
       <DTS:Property
         DTS:DataType="7"
-        DTS:Name="ParameterValue">6/1/2015</DTS:Property>
+        DTS:Name="ParameterValue">6/1/2021</DTS:Property>
     </DTS:PackageParameter>
     <DTS:PackageParameter
       DTS:CreationName=""
@@ -32,7 +32,7 @@
       DTS:ObjectName="DateTo">
       <DTS:Property
         DTS:DataType="7"
-        DTS:Name="ParameterValue">1/1/2016</DTS:Property>
+        DTS:Name="ParameterValue">6/1/2021</DTS:Property>
     </DTS:PackageParameter>
   </DTS:PackageParameters>
   <DTS:Variables />
@@ -5215,11 +5215,11 @@ where OID = ?</property>
                       refId="Package\Basic Animal\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[WeightIncreaseDecreaseStatus]"
                       cachedDataType="numeric"
                       cachedName="WeightIncreaseDecreaseStatus"
-                      cachedPrecision="18"
+                      cachedPrecision="10"
                       lineageId="Package\Basic Animal\Sort.Outputs[Sort Output].Columns[WeightIncreaseDecreaseStatus]" />
                     <inputColumn
                       refId="Package\Basic Animal\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[SystemEntryTimeStamp]"
-                      cachedDataType="dbDate"
+                      cachedDataType="dbTimeStamp"
                       cachedName="SystemEntryTimeStamp"
                       lineageId="Package\Basic Animal\Sort.Outputs[Sort Output].Columns[SystemEntryTimeStamp]" />
                   </inputColumns>
@@ -6529,7 +6529,7 @@ where OID = ?</property>
                       dataType="numeric"
                       lineageId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[WeightIncreaseDecreaseStatus]"
                       name="WeightIncreaseDecreaseStatus"
-                      precision="18">
+                      precision="10">
                       <properties>
                         <property
                           containsID="true"
@@ -6540,7 +6540,7 @@ where OID = ?</property>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       lineageId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]"
                       name="SystemEntryTimeStamp">
                       <properties>
@@ -7169,11 +7169,11 @@ where OID = ?</property>
                       refId="Package\Basic Animal\Conditional Split 1.Inputs[Conditional Split Input].Columns[WeightIncreaseDecreaseStatus]"
                       cachedDataType="numeric"
                       cachedName="WeightIncreaseDecreaseStatus"
-                      cachedPrecision="18"
+                      cachedPrecision="10"
                       lineageId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[WeightIncreaseDecreaseStatus]" />
                     <inputColumn
                       refId="Package\Basic Animal\Conditional Split 1.Inputs[Conditional Split Input].Columns[SystemEntryTimeStamp]"
-                      cachedDataType="dbDate"
+                      cachedDataType="dbTimeStamp"
                       cachedName="SystemEntryTimeStamp"
                       lineageId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]" />
                     <inputColumn
@@ -7760,11 +7760,11 @@ where OID = ?</property>
                       externalMetadataColumnId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[WeightIncreaseDecreaseStatus]"
                       lineageId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[WeightIncreaseDecreaseStatus]"
                       name="WeightIncreaseDecreaseStatus"
-                      precision="18"
+                      precision="10"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[SystemEntryTimeStamp]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[SystemEntryTimeStamp]"
@@ -7953,10 +7953,10 @@ where OID = ?</property>
                       refId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[WeightIncreaseDecreaseStatus]"
                       dataType="numeric"
                       name="WeightIncreaseDecreaseStatus"
-                      precision="18" />
+                      precision="10" />
                     <externalMetadataColumn
                       refId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[SystemEntryTimeStamp]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       name="SystemEntryTimeStamp" />
                   </externalMetadataColumns>
                 </output>
@@ -8187,10 +8187,10 @@ where OID = ?</property>
                       dataType="numeric"
                       lineageId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[WeightIncreaseDecreaseStatus]"
                       name="WeightIncreaseDecreaseStatus"
-                      precision="18" />
+                      precision="10" />
                     <outputColumn
                       refId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[SystemEntryTimeStamp]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       lineageId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[SystemEntryTimeStamp]"
                       name="SystemEntryTimeStamp" />
                     <outputColumn
@@ -9504,12 +9504,12 @@ where OID = ?</property>
                       refId="Package\Basic Animal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WeightIncreaseDecreaseStatus]"
                       cachedDataType="numeric"
                       cachedName="WeightIncreaseDecreaseStatus"
-                      cachedPrecision="18"
+                      cachedPrecision="10"
                       externalMetadataColumnId="Package\Basic Animal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WeightIncreaseDecreaseStatus]"
                       lineageId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[WeightIncreaseDecreaseStatus]" />
                     <inputColumn
                       refId="Package\Basic Animal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SystemEntryTimeStamp]"
-                      cachedDataType="dbDate"
+                      cachedDataType="dbTimeStamp"
                       cachedName="SystemEntryTimeStamp"
                       externalMetadataColumnId="Package\Basic Animal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SystemEntryTimeStamp]"
                       lineageId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]" />
@@ -10076,12 +10076,12 @@ where OID = ?</property>
                       refId="Package\Basic Animal\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[WeightIncreaseDecreaseStatus]"
                       cachedDataType="numeric"
                       cachedName="WeightIncreaseDecreaseStatus"
-                      cachedPrecision="18"
+                      cachedPrecision="10"
                       externalMetadataColumnId="Package\Basic Animal\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[WeightIncreaseDecreaseStatus]"
                       lineageId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[WeightIncreaseDecreaseStatus]" />
                     <inputColumn
                       refId="Package\Basic Animal\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[SystemEntryTimeStamp]"
-                      cachedDataType="dbDate"
+                      cachedDataType="dbTimeStamp"
                       cachedName="SystemEntryTimeStamp"
                       externalMetadataColumnId="Package\Basic Animal\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SystemEntryTimeStamp]"
                       lineageId="Package\Basic Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[SystemEntryTimeStamp]" />
@@ -12349,7 +12349,7 @@ where OID = ?</property>
                       refId="Package\Basic Animal\Sort.Inputs[Sort Input].Columns[WeightIncreaseDecreaseStatus]"
                       cachedDataType="numeric"
                       cachedName="WeightIncreaseDecreaseStatus"
-                      cachedPrecision="18"
+                      cachedPrecision="10"
                       lineageId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[WeightIncreaseDecreaseStatus]">
                       <properties>
                         <property
@@ -12364,7 +12364,7 @@ where OID = ?</property>
                     </inputColumn>
                     <inputColumn
                       refId="Package\Basic Animal\Sort.Inputs[Sort Input].Columns[SystemEntryTimeStamp]"
-                      cachedDataType="dbDate"
+                      cachedDataType="dbTimeStamp"
                       cachedName="SystemEntryTimeStamp"
                       lineageId="Package\Basic Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[SystemEntryTimeStamp]">
                       <properties>
@@ -12947,7 +12947,7 @@ where OID = ?</property>
                       dataType="numeric"
                       lineageId="Package\Basic Animal\Sort.Outputs[Sort Output].Columns[WeightIncreaseDecreaseStatus]"
                       name="WeightIncreaseDecreaseStatus"
-                      precision="18">
+                      precision="10">
                       <properties>
                         <property
                           containsID="true"
@@ -12958,7 +12958,7 @@ where OID = ?</property>
                     </outputColumn>
                     <outputColumn
                       refId="Package\Basic Animal\Sort.Outputs[Sort Output].Columns[SystemEntryTimeStamp]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       lineageId="Package\Basic Animal\Sort.Outputs[Sort Output].Columns[SystemEntryTimeStamp]"
                       name="SystemEntryTimeStamp">
                       <properties>
@@ -13256,7 +13256,7 @@ where OID = ?</property>
                     <inputColumn
                       refId="Package\History Animal\Combinación de mezcla.Inputs[Entrada izquierda de combinación de mezcla].Columns[Name]"
                       cachedDataType="wstr"
-                      cachedLength="1"
+                      cachedLength="100"
                       cachedName="Name"
                       lineageId="Package\History Animal\Sort.Outputs[Sort Output].Columns[Name]" />
                     <inputColumn
@@ -13827,7 +13827,7 @@ where OID = ?</property>
                     <outputColumn
                       refId="Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]"
                       dataType="wstr"
-                      length="1"
+                      length="100"
                       lineageId="Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]"
                       name="Name">
                       <properties>
@@ -14196,7 +14196,7 @@ where OID = ?</property>
                     <inputColumn
                       refId="Package\History Animal\Conditional Split 1.Inputs[Conditional Split Input].Columns[Name]"
                       cachedDataType="wstr"
-                      cachedLength="1"
+                      cachedLength="100"
                       cachedName="Name"
                       lineageId="Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]" />
                     <inputColumn
@@ -14526,6 +14526,34 @@ where OID = ?</property>
                       lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[CullDecisionDate]"
                       name="CullDecisionDate"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      length="100"
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[HairColor]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[HairColor]"
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[HairColor]"
+                      name="HairColor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[ReferenceId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[ReferenceId]"
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[ReferenceId]"
+                      name="ReferenceId"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -14596,6 +14624,19 @@ where OID = ?</property>
                       refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[CullDecisionDate]"
                       dataType="dbTimeStamp"
                       name="CullDecisionDate" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="100"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[HairColor]"
+                      dataType="i4"
+                      name="HairColor" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[ReferenceId]"
+                      dataType="i4"
+                      name="ReferenceId" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -14686,6 +14727,22 @@ where OID = ?</property>
                       dataType="i4"
                       lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[ExitType]"
                       name="ExitType" />
+                    <outputColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[HairColor]"
+                      dataType="i4"
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[HairColor]"
+                      name="HairColor" />
+                    <outputColumn
+                      refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[ReferenceId]"
+                      dataType="i4"
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[ReferenceId]"
+                      name="ReferenceId" />
                     <outputColumn
                       refId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -15386,7 +15443,7 @@ where OID = ?</property>
                     <inputColumn
                       refId="Package\History Animal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
                       cachedDataType="wstr"
-                      cachedLength="1"
+                      cachedLength="100"
                       cachedName="Name"
                       externalMetadataColumnId="Package\History Animal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                       lineageId="Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]" />
@@ -15700,7 +15757,7 @@ where OID = ?</property>
                     <inputColumn
                       refId="Package\History Animal\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Name]"
                       cachedDataType="wstr"
-                      cachedLength="1"
+                      cachedLength="100"
                       cachedName="Name"
                       externalMetadataColumnId="Package\History Animal\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
                       lineageId="Package\History Animal\Combinación de mezcla.Outputs[Salida de combinación de mezcla].Columns[Name]" />
@@ -16710,9 +16767,9 @@ where OID = ?</property>
                     <inputColumn
                       refId="Package\History Animal\Sort.Inputs[Sort Input].Columns[Name]"
                       cachedDataType="wstr"
-                      cachedLength="1"
+                      cachedLength="100"
                       cachedName="Name"
-                      lineageId="Package\History Animal\1381:invalid">
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[Name]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -16728,7 +16785,7 @@ where OID = ?</property>
                       refId="Package\History Animal\Sort.Inputs[Sort Input].Columns[HairColor]"
                       cachedDataType="i4"
                       cachedName="HairColor"
-                      lineageId="Package\History Animal\1382:invalid">
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[HairColor]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -16744,7 +16801,7 @@ where OID = ?</property>
                       refId="Package\History Animal\Sort.Inputs[Sort Input].Columns[ReferenceId]"
                       cachedDataType="i4"
                       cachedName="ReferenceId"
-                      lineageId="Package\History Animal\1383:invalid">
+                      lineageId="Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[ReferenceId]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -16981,7 +17038,7 @@ where OID = ?</property>
                     <outputColumn
                       refId="Package\History Animal\Sort.Outputs[Sort Output].Columns[Name]"
                       dataType="wstr"
-                      length="1"
+                      length="100"
                       lineageId="Package\History Animal\Sort.Outputs[Sort Output].Columns[Name]"
                       name="Name">
                       <properties>
@@ -16989,7 +17046,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal\1381:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[Name]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -17002,7 +17059,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal\1382:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[HairColor]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -17015,7 +17072,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal\1383:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal\DDVMS Source.Outputs[OLE DB Source Output].Columns[ReferenceId]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -18089,6 +18146,15 @@ where OID = ?</property>
                       lineageId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Output].Columns[DSLC]"
                       name="DSLC"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Output].Columns[BasicAnimal]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[BasicAnimal]"
+                      lineageId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Output].Columns[BasicAnimal]"
+                      name="BasicAnimal"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -18220,6 +18286,10 @@ where OID = ?</property>
                       refId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[DSLC]"
                       dataType="i2"
                       name="DSLC" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[BasicAnimal]"
+                      dataType="i4"
+                      name="BasicAnimal" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -18387,6 +18457,11 @@ where OID = ?</property>
                       dataType="i2"
                       lineageId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[DSLC]"
                       name="DSLC" />
+                    <outputColumn
+                      refId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[BasicAnimal]"
+                      dataType="i4"
+                      lineageId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[BasicAnimal]"
+                      name="BasicAnimal" />
                     <outputColumn
                       refId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -21685,7 +21760,7 @@ where OID = ?</property>
                       refId="Package\History Animal Daily Data\Sort.Inputs[Sort Input].Columns[BasicAnimal]"
                       cachedDataType="i4"
                       cachedName="BasicAnimal"
-                      lineageId="Package\History Animal Daily Data\1384:invalid">
+                      lineageId="Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Output].Columns[BasicAnimal]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -22134,7 +22209,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal Daily Data\1384:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal Daily Data\DDVMS Source.Outputs[OLE DB Source Output].Columns[BasicAnimal]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -25658,6 +25733,60 @@ where OID = ?</property>
                       lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[AvgCellCount]"
                       name="AvgCellCount"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[CalvingEase]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[CalvingEase]"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[CalvingEase]"
+                      name="CalvingEase"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf1]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf1]"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf1]"
+                      name="Calf1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf2]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf2]"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf2]"
+                      name="Calf2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf3]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf3]"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf3]"
+                      name="Calf3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf4]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf4]"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf4]"
+                      name="Calf4"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf5]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf5]"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf5]"
+                      name="Calf5"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -25781,6 +25910,30 @@ where OID = ?</property>
                       refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[AvgCellCount]"
                       dataType="r8"
                       name="AvgCellCount" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[CalvingEase]"
+                      dataType="i4"
+                      name="CalvingEase" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf1]"
+                      dataType="i4"
+                      name="Calf1" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf2]"
+                      dataType="i4"
+                      name="Calf2" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf3]"
+                      dataType="i4"
+                      name="Calf3" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf4]"
+                      dataType="i4"
+                      name="Calf4" />
+                    <externalMetadataColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[Calf5]"
+                      dataType="i4"
+                      name="Calf5" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -25938,6 +26091,36 @@ where OID = ?</property>
                       dataType="r8"
                       lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[AvgCellCount]"
                       name="AvgCellCount" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[CalvingEase]"
+                      dataType="i4"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[CalvingEase]"
+                      name="CalvingEase" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf1]"
+                      dataType="i4"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf1]"
+                      name="Calf1" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf2]"
+                      dataType="i4"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf2]"
+                      name="Calf2" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf3]"
+                      dataType="i4"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf3]"
+                      name="Calf3" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf4]"
+                      dataType="i4"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf4]"
+                      name="Calf4" />
+                    <outputColumn
+                      refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf5]"
+                      dataType="i4"
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[Calf5]"
+                      name="Calf5" />
                     <outputColumn
                       refId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
@@ -29374,7 +29557,7 @@ where OID = ?</property>
                       refId="Package\History Animal Lactation Info\Sort.Inputs[Sort Input].Columns[CalvingEase]"
                       cachedDataType="i4"
                       cachedName="CalvingEase"
-                      lineageId="Package\History Animal Lactation Info\1385:invalid">
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[CalvingEase]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -29390,7 +29573,7 @@ where OID = ?</property>
                       refId="Package\History Animal Lactation Info\Sort.Inputs[Sort Input].Columns[Calf1]"
                       cachedDataType="i4"
                       cachedName="Calf1"
-                      lineageId="Package\History Animal Lactation Info\1386:invalid">
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf1]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -29406,7 +29589,7 @@ where OID = ?</property>
                       refId="Package\History Animal Lactation Info\Sort.Inputs[Sort Input].Columns[Calf2]"
                       cachedDataType="i4"
                       cachedName="Calf2"
-                      lineageId="Package\History Animal Lactation Info\1387:invalid">
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf2]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -29422,7 +29605,7 @@ where OID = ?</property>
                       refId="Package\History Animal Lactation Info\Sort.Inputs[Sort Input].Columns[Calf3]"
                       cachedDataType="i4"
                       cachedName="Calf3"
-                      lineageId="Package\History Animal Lactation Info\1388:invalid">
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf3]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -29438,7 +29621,7 @@ where OID = ?</property>
                       refId="Package\History Animal Lactation Info\Sort.Inputs[Sort Input].Columns[Calf4]"
                       cachedDataType="i4"
                       cachedName="Calf4"
-                      lineageId="Package\History Animal Lactation Info\1389:invalid">
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf4]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -29454,7 +29637,7 @@ where OID = ?</property>
                       refId="Package\History Animal Lactation Info\Sort.Inputs[Sort Input].Columns[Calf5]"
                       cachedDataType="i4"
                       cachedName="Calf5"
-                      lineageId="Package\History Animal Lactation Info\1390:invalid">
+                      lineageId="Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf5]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -29877,7 +30060,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal Lactation Info\1385:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[CalvingEase]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -29890,7 +30073,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal Lactation Info\1386:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf1]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -29903,7 +30086,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal Lactation Info\1387:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf2]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -29916,7 +30099,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal Lactation Info\1388:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf3]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -29929,7 +30112,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal Lactation Info\1389:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf4]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -29942,7 +30125,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Especifica el identificador de linaje de la columna de entrada que está asociada a esta columna de salida."
-                          name="SortColumnId">#{Package\History Animal Lactation Info\1390:invalid}</property>
+                          name="SortColumnId">#{Package\History Animal Lactation Info\DDVMS Source.Outputs[OLE DB Source Output].Columns[Calf5]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -31881,33 +32064,33 @@ where OID = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="177,42"
-          Id="Package\History Animal\OLE DB Destination"
-          TopLeft="28.222222222222,464.888888888889" />
+          Size="186,42"
+          Id="Package\History Animal\OLE DB Destination 1"
+          TopLeft="246.222222222222,543.888888888889" />
         <NodeLayout
           Size="196,42"
           Id="Package\History Animal\Combinación de mezcla"
           TopLeft="167,255" />
         <NodeLayout
-          Size="99,42"
-          Id="Package\History Animal\Sort"
-          TopLeft="91,149" />
+          Size="204,42"
+          Id="Package\History Animal\DELPRO Destination"
+          TopLeft="291.222222222222,63.8888888888889" />
         <NodeLayout
           Size="159,42"
           Id="Package\History Animal\Conditional Split"
           TopLeft="184.222222222222,343.888888888889" />
         <NodeLayout
-          Size="186,42"
-          Id="Package\History Animal\OLE DB Destination 1"
-          TopLeft="246.222222222222,543.888888888889" />
-        <NodeLayout
-          Size="204,42"
-          Id="Package\History Animal\DELPRO Destination"
-          TopLeft="291.222222222222,63.8888888888889" />
+          Size="177,42"
+          Id="Package\History Animal\OLE DB Destination"
+          TopLeft="28.222222222222,464.888888888889" />
         <NodeLayout
           Size="119,42"
           Id="Package\History Animal\Ordenar"
           TopLeft="325,143" />
+        <NodeLayout
+          Size="99,42"
+          Id="Package\History Animal\Sort"
+          TopLeft="91,149" />
         <NodeLayout
           Size="156,42"
           Id="Package\History Animal\DDVMS Source"
@@ -31920,6 +32103,112 @@ where OID = ?</property>
           Size="168,42"
           Id="Package\History Animal\Conditional Split 1"
           TopLeft="250,463" />
+        <EdgeLayout
+          Id="Package\History Animal.Paths[updated]"
+          TopLeft="288.888888888889,385.888888888889">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="45.1111111111113,77.111111111111"
+              Start="0,0"
+              End="45.1111111111113,69.611111111111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.3053825930538" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.3053825930538"
+                    Point2="0,31.3053825930538"
+                    Point3="4,31.3053825930538" />
+                  <mssgle:LineSegment
+                    End="41.1111111111113,31.3053825930538" />
+                  <mssgle:CubicBezierSegment
+                    Point1="41.1111111111113,31.3053825930538"
+                    Point2="45.1111111111113,31.3053825930538"
+                    Point3="45.1111111111113,35.3053825930538" />
+                  <mssgle:LineSegment
+                    End="45.1111111111113,69.611111111111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.19141493055565,36.3053825930538,36.72828125,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\History Animal.Paths[update exists records]"
+          TopLeft="418,484">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66.2222222222219,39.888888888889"
+              Start="0,0"
+              End="58.7222222222219,39.888888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="29.111111111111,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="29.111111111111,0"
+                    Point2="33.111111111111,0"
+                    Point3="33.111111111111,4" />
+                  <mssgle:LineSegment
+                    End="33.111111111111,35.888888888889" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.111111111111,35.888888888889"
+                    Point2="33.111111111111,39.888888888889"
+                    Point3="37.111111111111,39.888888888889" />
+                  <mssgle:LineSegment
+                    End="58.7222222222219,39.888888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-14.482619357639,-17.609375,95.1874609375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\History Animal.Paths[Sort Output]"
+          TopLeft="140.5,191">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="124.5,64"
+              Start="0,0"
+              End="124.5,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="120.5,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="120.5,32"
+                    Point2="124.5,32"
+                    Point3="124.5,36" />
+                  <mssgle:LineSegment
+                    End="124.5,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\History Animal.Paths[Salida de ordenación]"
           TopLeft="384.5,185">
@@ -32092,128 +32381,9 @@ where OID = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal.Paths[updated]"
-          TopLeft="288.888888888889,385.888888888889">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="45.1111111111113,77.111111111111"
-              Start="0,0"
-              End="45.1111111111113,69.611111111111">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.3053825930538" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.3053825930538"
-                    Point2="0,31.3053825930538"
-                    Point3="4,31.3053825930538" />
-                  <mssgle:LineSegment
-                    End="41.1111111111113,31.3053825930538" />
-                  <mssgle:CubicBezierSegment
-                    Point1="41.1111111111113,31.3053825930538"
-                    Point2="45.1111111111113,31.3053825930538"
-                    Point3="45.1111111111113,35.3053825930538" />
-                  <mssgle:LineSegment
-                    End="45.1111111111113,69.611111111111" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="4.19141493055565,36.3053825930538,36.72828125,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal.Paths[update exists records]"
-          TopLeft="418,484">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66.2222222222219,39.888888888889"
-              Start="0,0"
-              End="58.7222222222219,39.888888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="29.111111111111,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.111111111111,0"
-                    Point2="33.111111111111,0"
-                    Point3="33.111111111111,4" />
-                  <mssgle:LineSegment
-                    End="33.111111111111,35.888888888889" />
-                  <mssgle:CubicBezierSegment
-                    Point1="33.111111111111,35.888888888889"
-                    Point2="33.111111111111,39.888888888889"
-                    Point3="37.111111111111,39.888888888889" />
-                  <mssgle:LineSegment
-                    End="58.7222222222219,39.888888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-14.482619357639,-17.609375,95.1874609375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal.Paths[Sort Output]"
-          TopLeft="140.5,191">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="124.5,64"
-              Start="0,0"
-              End="124.5,56.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28"
-                    Point2="0,32"
-                    Point3="4,32" />
-                  <mssgle:LineSegment
-                    End="120.5,32" />
-                  <mssgle:CubicBezierSegment
-                    Point1="120.5,32"
-                    Point2="124.5,32"
-                    Point3="124.5,36" />
-                  <mssgle:LineSegment
-                    End="124.5,56.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\History Animal\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\History Animal\OLE DB Destination 1">
     <Properties>
@@ -32229,6 +32399,19 @@ where OID = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\History Animal\DELPRO Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\History Animal\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -32401,9 +32584,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32437,9 +32618,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32461,9 +32640,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32497,9 +32674,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32533,9 +32708,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32671,10 +32844,6 @@ where OID = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="99,42"
-          Id="Package\History Animal Lactation Info\Sort"
-          TopLeft="84,151" />
-        <NodeLayout
           Size="196,42"
           Id="Package\History Animal Lactation Info\Combinación de mezcla"
           TopLeft="152,260" />
@@ -32744,74 +32913,6 @@ where OID = ?</property>
             <mssgm:EdgeLabel
               BoundingBox="0.436269531249991,-17.609375,87.1274609375,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal Lactation Info.Paths[Sort Output]"
-          TopLeft="133.5,193">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="116.5,67"
-              Start="0,0"
-              End="116.5,59.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.5"
-                    Point2="0,33.5"
-                    Point3="4,33.5" />
-                  <mssgle:LineSegment
-                    End="112.5,33.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="112.5,33.5"
-                    Point2="116.5,33.5"
-                    Point3="116.5,37.5" />
-                  <mssgle:LineSegment
-                    End="116.5,59.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\History Animal Lactation Info.Paths[Salida de ordenación]"
-          TopLeft="377.5,200">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-96.1666666666667,60"
-              Start="0,0"
-              End="-96.1666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.7085020242915" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.7085020242915"
-                    Point2="0,35.7085020242915"
-                    Point3="-4,35.7085020242915" />
-                  <mssgle:LineSegment
-                    End="-92.1666666666667,35.7085020242915" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-92.1666666666667,35.7085020242915"
-                    Point2="-96.1666666666667,35.7085020242915"
-                    Point3="-96.1666666666667,39.7085020242915" />
-                  <mssgle:LineSegment
-                    End="-96.1666666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -32979,6 +33080,44 @@ where OID = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\History Animal Lactation Info.Paths[Salida de ordenación]"
+          TopLeft="377.5,200">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-96.1666666666667,60"
+              Start="0,0"
+              End="-96.1666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.7085020242915" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.7085020242915"
+                    Point2="0,35.7085020242915"
+                    Point3="-4,35.7085020242915" />
+                  <mssgle:LineSegment
+                    End="-92.1666666666667,35.7085020242915" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-92.1666666666667,35.7085020242915"
+                    Point2="-96.1666666666667,35.7085020242915"
+                    Point3="-96.1666666666667,39.7085020242915" />
+                  <mssgle:LineSegment
+                    End="-96.1666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="99,42"
+          Id="Package\History Animal Lactation Info\Sort"
+          TopLeft="84,151" />
+        <EdgeLayout
           Id="Package\History Animal Lactation Info.Paths[OLE DB Source Output1]"
           TopLeft="135.25,103">
           <EdgeLayout.Curve>
@@ -32997,9 +33136,41 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,12.25,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\History Animal Lactation Info.Paths[Sort Output]"
+          TopLeft="133.5,193">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="85.1666666666667,67"
+              Start="0,0"
+              End="85.1666666666667,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.8744939271255" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.8744939271255"
+                    Point2="0,39.8744939271255"
+                    Point3="4,39.8744939271255" />
+                  <mssgle:LineSegment
+                    End="81.1666666666667,39.8744939271255" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.1666666666667,39.8744939271255"
+                    Point2="85.1666666666667,39.8744939271255"
+                    Point3="85.1666666666667,43.8744939271255" />
+                  <mssgle:LineSegment
+                    End="85.1666666666667,59.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
