@@ -2,28 +2,33 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS</Name>
-    <LastWriteTime>2022-12-09T23:18:21.3696327Z</LastWriteTime>
+    <LastWriteTime>2022-12-14T15:56:07.1200245Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>ETL-History-Animal.dtsx</Name>
-      <LastWriteTime>2022-11-30T01:51:02.142313Z</LastWriteTime>
+      <LastWriteTime>2022-12-12T13:08:47.483329Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
-	  <ProjectBuildItemInfo>
-		  <Name>Stage2.dtsx</Name>
-		  <LastWriteTime>2022-12-09T23:13:08.2497267Z</LastWriteTime>
-		  <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-	  </ProjectBuildItemInfo>
-	  <ProjectBuildItemInfo>
-		  <Name>Stage1.dtsx</Name>
-		  <LastWriteTime>2022-12-09T23:18:55.0011605Z</LastWriteTime>
-		  <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-	  </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>ETL-Stage3.dtsx</Name>
-      <LastWriteTime>2022-12-01T11:50:04.2214169Z</LastWriteTime>
+      <Name>Stage2.dtsx</Name>
+      <LastWriteTime>2022-12-14T23:47:34.4901033Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Stage1.dtsx</Name>
+      <LastWriteTime>2022-12-14T22:13:27.3684975Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Stage3.dtsx</Name>
+      <LastWriteTime>2022-12-14T22:32:49.4814329Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>masterPackage.dtsx</Name>
+      <LastWriteTime>2022-12-14T23:56:28.9899539Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

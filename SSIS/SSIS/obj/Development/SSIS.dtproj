@@ -26,14 +26,15 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DAR-LAB-MA</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUvzFZP+25kKERpno44SXQgAAAAACAAAAAAAQZgAAAAEAACAAAABFDxScfkSS26MiPdV9o3MY2Y6MkzBO/Iu/Y3AhC7XGsAAAAAAOgAAAAAIAACAAAACg700XUjPqAOTgUPz8nVtVdAVQnSzKgUAqMedrS9iczZAAAABNR3XIBsKZDFUfGTXUhCNIrEZRuLhBYAG4ivjoA2TR0/62zDSLdNr1xAGD/DEw/kgaBBhmBTtlHU3/WGR+tJooVfXN0EMj4LTnuS2xbhSiWoHVt0xfULcK+vVvFHbBO47tQkzjAx2BubQDEmnmRmV53HJxrJL2Aj6bQLim2vW+NENNNnjMVBOopqWR+VgICVJAAAAAUYaEy0+yl+1+laUdH53DCAIYxSZ47tXjetYZzda5LsrJC0t9SwIRL0xhfIuH3e+s+33G/Qy8+xXOTbUYcSOn1w==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAUvzFZP+25kKERpno44SXQgAAAAACAAAAAAAQZgAAAAEAACAAAAAlVbdCif4f7BonHpQGQ3pVHG35rCdBtIqKSPyTtswm+QAAAAAOgAAAAAIAACAAAABU8Rs3vbr23ryH1Eouanwgk8BUmqAZvVhEAXZ6lEEjw5AAAAB2EdoFgwnjS+OEV/xbvbbZQdzTHW3xw4Tk+JkbbhbySjGrPEhpUNTllQ7Vsk2Qy4j3QwAMRz9pO1hCuxUgLBFDq6vamP25grEkkJ1mlDPJ5FWyFYhQsKrEeeyABLdTbewbKRkXAfKPOvJ20BMtf4WKy52rGW7aP6mfu1+of3mNRVJMSs3+r4P55D9UMb8YhIxAAAAAnSjjg1EdV8kBS8muM6j6VFZJ2ciiXVig8ZB5xHI0PnHJn0RhkIV3JJ6QWqE7yegAId7GeYOh47J7vxNir7CuVw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="ETL-History-Animal.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Stage2.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Stage1.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="ETL-Stage3.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Stage3.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="masterPackage.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="DAR-LAB-MA_SQLEXPRESS.DDMVMS.conmgr" />
@@ -67,7 +68,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=DAR-LAB-MA\SQLEXPRESS;Initial Catalog=DB_20170101;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-SSIS-{3AD2592E-37A1-44D8-885B-B0F78490B3BF}DAR-LAB-MA\SQLEXPRESS.DDMVMS;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=DAR-LAB-MA\SQLEXPRESS;Initial Catalog=DB_20210601;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-SSIS-{3AD2592E-37A1-44D8-885B-B0F78490B3BF}DAR-LAB-MA\SQLEXPRESS.DDMVMS;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -127,7 +128,7 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">DB_20170101</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">DB_20210601</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -391,45 +392,16 @@
                 <SSIS:Property SSIS:Name="Name">Package3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">73</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">95</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{853D6AD1-CF6D-4CDD-A1A9-04EB5B4844F3}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A5E06A9D-B51D-4EA1-9CA6-45F0991DCD28}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
-              <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="DateFrom">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{E0C8A68E-09F2-46BA-BCBA-F3549FB66068}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">2021-06-01T00:00:00</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">16</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="DateTo">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{B51356BA-7C54-4F21-9B94-D3B4277349FC}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">2021-06-01T00:00:00</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">16</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-              </SSIS:Parameters>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="Stage1.dtsx">
               <SSIS:Properties>
@@ -437,91 +409,50 @@
                 <SSIS:Property SSIS:Name="Name">Stage1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">200</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">236</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{1A205EE2-3254-4455-BB30-20EA31702364}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{573D2771-77FC-4F94-B824-B9A7F2F2585B}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
-              <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="DateFrom">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{078B51B3-95AF-44EF-99C8-7024B9BBB9B6}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">2021-06-01T00:00:00</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">16</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="DateTo">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{7B78338A-0D3F-4BA8-BD62-829FE12C70F9}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">2021-06-01T00:00:00</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">16</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-              </SSIS:Parameters>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="ETL-Stage3.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Stage3.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{9A03DA12-4327-48F0-AB24-9EB047CE7497}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package3</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{42CDA2BC-722A-48C6-B91F-B832A369A82F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Stage3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">17</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">30</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{ED62E2B9-772F-4A9D-9539-E7774201D7DE}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A6DC8AC2-F649-451A-AF95-817BC69C59F9}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
-              <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="DateFrom">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{4D4D9B2B-5B3E-4728-A3E9-96A66CCF83A7}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">2017-01-01T00:00:00</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">16</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="DateTo">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">{CC3D5061-B95F-4CC4-B936-3B7F536EE1D8}</SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">2017-06-01T00:00:00</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">16</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-              </SSIS:Parameters>
+              <SSIS:Parameters />
+            </SSIS:PackageMetaData>
+            <SSIS:PackageMetaData SSIS:Name="masterPackage.dtsx">
+              <SSIS:Properties>
+                <SSIS:Property SSIS:Name="ID">{3238A4F4-02ED-425E-87CE-B46471552DC8}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionComments">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{079E432A-18DE-46BC-85A0-B761C4717976}</SSIS:Property>
+                <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
+                <SSIS:Property SSIS:Name="Description">
+                </SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+              </SSIS:Properties>
+              <SSIS:Parameters />
             </SSIS:PackageMetaData>
           </SSIS:PackageInfo>
         </SSIS:DeploymentInfo>
