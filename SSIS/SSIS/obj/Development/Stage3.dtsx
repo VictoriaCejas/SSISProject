@@ -7,12 +7,12 @@
   DTS:CreatorName="DAR-LAB-MA\Victoria"
   DTS:DTSID="{42CDA2BC-722A-48C6-B91F-B832A369A82F}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.694.0"
+  DTS:LastModifiedProductVersion="16.0.521.0"
   DTS:LocaleID="11274"
   DTS:ObjectName="Stage3"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{A6DC8AC2-F649-451A-AF95-817BC69C59F9}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{7C7E194D-5E49-4F34-9EA7-BB782393F70B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -5736,15 +5736,6 @@ where OID = ?</property>
                       lineageId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Output].Columns[TeatsFailedCleaning]"
                       name="TeatsFailedCleaning"
                       truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Output].Columns[SelectiveAttach]"
-                      dataType="ui1"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[SelectiveAttach]"
-                      lineageId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Output].Columns[SelectiveAttach]"
-                      name="SelectiveAttach"
-                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -5996,10 +5987,6 @@ where OID = ?</property>
                       refId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[TeatsFailedCleaning]"
                       dataType="ui1"
                       name="TeatsFailedCleaning" />
-                    <externalMetadataColumn
-                      refId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Output].ExternalColumns[SelectiveAttach]"
-                      dataType="ui1"
-                      name="SelectiveAttach" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -6329,11 +6316,6 @@ where OID = ?</property>
                       dataType="ui1"
                       lineageId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[TeatsFailedCleaning]"
                       name="TeatsFailedCleaning" />
-                    <outputColumn
-                      refId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[SelectiveAttach]"
-                      dataType="ui1"
-                      lineageId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Error Output].Columns[SelectiveAttach]"
-                      name="SelectiveAttach" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -14318,7 +14300,7 @@ where OID = ?</property>
                       refId="Package\VoluntarySessionMilk\Sort.Inputs[Sort Input].Columns[SelectiveAttach]"
                       cachedDataType="ui1"
                       cachedName="SelectiveAttach"
-                      lineageId="Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Output].Columns[SelectiveAttach]">
+                      lineageId="Package\VoluntarySessionMilk\1919:invalid">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -15157,7 +15139,7 @@ where OID = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\VoluntarySessionMilk\DDVMS Source.Outputs[OLE DB Source Output].Columns[SelectiveAttach]}</property>
+                          name="SortColumnId">#{Package\VoluntarySessionMilk\1919:invalid}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -15486,10 +15468,6 @@ where OID = ?</property>
           Id="Package\AbstractGroup\DDVMS Source"
           TopLeft="172.777777777778,36.1111111111111" />
         <NodeLayout
-          Size="186,43"
-          Id="Package\AbstractGroup\OLE DB Destination 1"
-          TopLeft="287,592.5" />
-        <NodeLayout
           Size="133,42"
           Id="Package\AbstractGroup\Merge Join"
           TopLeft="313,224" />
@@ -15498,13 +15476,13 @@ where OID = ?</property>
           Id="Package\AbstractGroup\DELPRO Destination"
           TopLeft="405,38" />
         <NodeLayout
-          Size="99,42"
-          Id="Package\AbstractGroup\Sort"
-          TopLeft="218,138" />
-        <NodeLayout
           Size="119,42"
           Id="Package\AbstractGroup\Ordenar"
           TopLeft="437,138" />
+        <NodeLayout
+          Size="99,42"
+          Id="Package\AbstractGroup\Sort"
+          TopLeft="218,138" />
         <NodeLayout
           Size="177,42"
           Id="Package\AbstractGroup\OLE DB Destination"
@@ -15513,74 +15491,10 @@ where OID = ?</property>
           Size="185,42"
           Id="Package\AbstractGroup\Comando de OLE DB"
           TopLeft="529,584.5" />
-        <EdgeLayout
-          Id="Package\AbstractGroup.Paths[Sort Output]"
-          TopLeft="267.5,180">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="112,44"
-              Start="0,0"
-              End="112,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18"
-                    Point2="0,22"
-                    Point3="4,22" />
-                  <mssgle:LineSegment
-                    End="108,22" />
-                  <mssgle:CubicBezierSegment
-                    Point1="108,22"
-                    Point2="112,22"
-                    Point3="112,26" />
-                  <mssgle:LineSegment
-                    End="112,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\AbstractGroup.Paths[Salida de ordenación]"
-          TopLeft="496.5,180">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-96.1666666666667,44"
-              Start="0,0"
-              End="-96.1666666666667,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.0861812778603" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.0861812778603"
-                    Point2="0,26.0861812778603"
-                    Point3="-4,26.0861812778603" />
-                  <mssgle:LineSegment
-                    End="-92.1666666666667,26.0861812778603" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-92.1666666666667,26.0861812778603"
-                    Point2="-96.1666666666667,26.0861812778603"
-                    Point3="-96.1666666666667,30.0861812778603" />
-                  <mssgle:LineSegment
-                    End="-96.1666666666667,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="186,43"
+          Id="Package\AbstractGroup\OLE DB Destination 1"
+          TopLeft="287,592.5" />
         <EdgeLayout
           Id="Package\AbstractGroup.Paths[OLE DB Source Output1]"
           TopLeft="507,80">
@@ -15612,7 +15526,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15646,7 +15562,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15680,7 +15598,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15803,24 +15723,83 @@ where OID = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AbstractGroup.Paths[Sort Output]"
+          TopLeft="267.5,180">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="112,44"
+              Start="0,0"
+              End="112,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18"
+                    Point2="0,22"
+                    Point3="4,22" />
+                  <mssgle:LineSegment
+                    End="108,22" />
+                  <mssgle:CubicBezierSegment
+                    Point1="108,22"
+                    Point2="112,22"
+                    Point3="112,26" />
+                  <mssgle:LineSegment
+                    End="112,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AbstractGroup.Paths[Salida de ordenación]"
+          TopLeft="496.5,180">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-96.1666666666667,44"
+              Start="0,0"
+              End="-96.1666666666667,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.0861812778603" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.0861812778603"
+                    Point2="0,26.0861812778603"
+                    Point3="-4,26.0861812778603" />
+                  <mssgle:LineSegment
+                    End="-92.1666666666667,26.0861812778603" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-92.1666666666667,26.0861812778603"
+                    Point2="-96.1666666666667,26.0861812778603"
+                    Point3="-96.1666666666667,30.0861812778603" />
+                  <mssgle:LineSegment
+                    End="-96.1666666666667,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\AbstractGroup\DDVMS Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\AbstractGroup\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -15858,6 +15837,19 @@ where OID = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\AbstractGroup\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\AnimalGroup">
     <LayoutInfo>
@@ -15872,25 +15864,21 @@ where OID = ?</property>
           Id="Package\AnimalGroup\DDVMS Source"
           TopLeft="172.777777777778,36.1111111111111" />
         <NodeLayout
-          Size="119,42"
-          Id="Package\AnimalGroup\Ordenar"
-          TopLeft="438,138" />
-        <NodeLayout
-          Size="186,43"
-          Id="Package\AnimalGroup\OLE DB Destination 1"
-          TopLeft="287,592.5" />
+          Size="99,42"
+          Id="Package\AnimalGroup\Sort"
+          TopLeft="220,141" />
         <NodeLayout
           Size="159,42"
           Id="Package\AnimalGroup\Conditional Split"
           TopLeft="284,321" />
         <NodeLayout
-          Size="99,42"
-          Id="Package\AnimalGroup\Sort"
-          TopLeft="220,141" />
+          Size="186,43"
+          Id="Package\AnimalGroup\OLE DB Destination 1"
+          TopLeft="287,592.5" />
         <NodeLayout
-          Size="177,42"
-          Id="Package\AnimalGroup\OLE DB Destination"
-          TopLeft="55,413" />
+          Size="119,42"
+          Id="Package\AnimalGroup\Ordenar"
+          TopLeft="438,138" />
         <NodeLayout
           Size="133,42"
           Id="Package\AnimalGroup\Merge Join"
@@ -15900,9 +15888,217 @@ where OID = ?</property>
           Id="Package\AnimalGroup\Comando de OLE DB"
           TopLeft="529,584.5" />
         <NodeLayout
+          Size="177,42"
+          Id="Package\AnimalGroup\OLE DB Destination"
+          TopLeft="55,413" />
+        <NodeLayout
           Size="204,42"
           Id="Package\AnimalGroup\DELPRO Destination"
           TopLeft="405,38" />
+        <EdgeLayout
+          Id="Package\AnimalGroup.Paths[Salida de ordenación]"
+          TopLeft="497.5,180">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-97.1666666666667,41"
+              Start="0,0"
+              End="-97.1666666666667,33.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3075780089153" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3075780089153"
+                    Point2="0,24.3075780089153"
+                    Point3="-4,24.3075780089153" />
+                  <mssgle:LineSegment
+                    End="-93.1666666666667,24.3075780089153" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-93.1666666666667,24.3075780089153"
+                    Point2="-97.1666666666667,24.3075780089153"
+                    Point3="-97.1666666666667,28.3075780089153" />
+                  <mssgle:LineSegment
+                    End="-97.1666666666667,33.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AnimalGroup.Paths[OLE DB Source Output1]"
+          TopLeft="250.777777777778,78.1111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.722222222222,62.8888888888889"
+              Start="0,0"
+              End="18.722222222222,55.3888888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.4444444444445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.4444444444445"
+                    Point2="0,31.4444444444445"
+                    Point3="4,31.4444444444445" />
+                  <mssgle:LineSegment
+                    End="14.722222222222,31.4444444444445" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.722222222222,31.4444444444445"
+                    Point2="18.722222222222,31.4444444444445"
+                    Point3="18.722222222222,35.4444444444445" />
+                  <mssgle:LineSegment
+                    End="18.722222222222,55.3888888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AnimalGroup.Paths[OLE DB Source Output]"
+          TopLeft="506,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.5,58"
+              Start="0,0"
+              End="-8.5,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="-4,29" />
+                  <mssgle:LineSegment
+                    End="-4.5,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.5,29"
+                    Point2="-8.5,29"
+                    Point3="-8.5,33" />
+                  <mssgle:LineSegment
+                    End="-8.5,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AnimalGroup.Paths[Merge Join Output]"
+          TopLeft="379.5,263">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-16,58"
+              Start="0,0"
+              End="-16,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25"
+                    Point2="0,29"
+                    Point3="-4,29" />
+                  <mssgle:LineSegment
+                    End="-12,29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-12,29"
+                    Point2="-16,29"
+                    Point3="-16,33" />
+                  <mssgle:LineSegment
+                    End="-16,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AnimalGroup.Paths[insert1]"
+          TopLeft="381.5,495">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,97.5"
+              Start="0,0"
+              End="0,90">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,90" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-12.94998046875,40.2744140625,25.8999609375,9.451171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\AnimalGroup.Paths[insert]"
+          TopLeft="338.333333333333,363">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-194.833333333333,50"
+              Start="0,0"
+              End="-194.833333333333,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.2988792029888" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.2988792029888"
+                    Point2="0,20.2988792029888"
+                    Point3="-4,20.2988792029888" />
+                  <mssgle:LineSegment
+                    End="-190.833333333333,20.2988792029888" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-190.833333333333,20.2988792029888"
+                    Point2="-194.833333333333,20.2988792029888"
+                    Point3="-194.833333333333,24.2988792029888" />
+                  <mssgle:LineSegment
+                    End="-194.833333333333,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-110.366647135417,25.2988792029888,25.8999609375,9.451171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\AnimalGroup.Paths[updated]"
           TopLeft="385.833333333333,363">
@@ -15994,202 +16190,8 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\AnimalGroup.Paths[Salida de ordenación]"
-          TopLeft="497.5,180">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-97.1666666666667,41"
-              Start="0,0"
-              End="-97.1666666666667,33.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.3075780089153" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.3075780089153"
-                    Point2="0,24.3075780089153"
-                    Point3="-4,24.3075780089153" />
-                  <mssgle:LineSegment
-                    End="-93.1666666666667,24.3075780089153" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-93.1666666666667,24.3075780089153"
-                    Point2="-97.1666666666667,24.3075780089153"
-                    Point3="-97.1666666666667,28.3075780089153" />
-                  <mssgle:LineSegment
-                    End="-97.1666666666667,33.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\AnimalGroup.Paths[OLE DB Source Output1]"
-          TopLeft="250.777777777778,78.1111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="18.722222222222,62.8888888888889"
-              Start="0,0"
-              End="18.722222222222,55.3888888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.4444444444445" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.4444444444445"
-                    Point2="0,31.4444444444445"
-                    Point3="4,31.4444444444445" />
-                  <mssgle:LineSegment
-                    End="14.722222222222,31.4444444444445" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.722222222222,31.4444444444445"
-                    Point2="18.722222222222,31.4444444444445"
-                    Point3="18.722222222222,35.4444444444445" />
-                  <mssgle:LineSegment
-                    End="18.722222222222,55.3888888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\AnimalGroup.Paths[OLE DB Source Output]"
-          TopLeft="506,80">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-8.5,58"
-              Start="0,0"
-              End="-8.5,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25"
-                    Point2="0,29"
-                    Point3="-4,29" />
-                  <mssgle:LineSegment
-                    End="-4.5,29" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.5,29"
-                    Point2="-8.5,29"
-                    Point3="-8.5,33" />
-                  <mssgle:LineSegment
-                    End="-8.5,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\AnimalGroup.Paths[Merge Join Output]"
-          TopLeft="379.5,263">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-16,58"
-              Start="0,0"
-              End="-16,50.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25"
-                    Point2="0,29"
-                    Point3="-4,29" />
-                  <mssgle:LineSegment
-                    End="-12,29" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-12,29"
-                    Point2="-16,29"
-                    Point3="-16,33" />
-                  <mssgle:LineSegment
-                    End="-16,50.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\AnimalGroup.Paths[insert1]"
-          TopLeft="381.5,495">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,97.5"
-              Start="0,0"
-              End="0,90">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,90" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-12.94998046875,40.2744140625,25.8999609375,9.451171875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\AnimalGroup.Paths[insert]"
-          TopLeft="338.333333333333,363">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-194.833333333333,50"
-              Start="0,0"
-              End="-194.833333333333,42.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.2988792029888" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.2988792029888"
-                    Point2="0,20.2988792029888"
-                    Point3="-4,20.2988792029888" />
-                  <mssgle:LineSegment
-                    End="-190.833333333333,20.2988792029888" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-190.833333333333,20.2988792029888"
-                    Point2="-194.833333333333,20.2988792029888"
-                    Point3="-194.833333333333,24.2988792029888" />
-                  <mssgle:LineSegment
-                    End="-194.833333333333,42.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-110.366647135417,25.2988792029888,25.8999609375,9.451171875"
+              BoundingBox="0,0,0,0"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16274,6 +16276,14 @@ where OID = ?</property>
           Id="Package\VoluntarySessionMilk\Ordenar"
           TopLeft="437,137" />
         <NodeLayout
+          Size="177,42"
+          Id="Package\VoluntarySessionMilk\OLE DB Destination"
+          TopLeft="94,411" />
+        <NodeLayout
+          Size="99,42"
+          Id="Package\VoluntarySessionMilk\Sort"
+          TopLeft="218,138" />
+        <NodeLayout
           Size="156,42"
           Id="Package\VoluntarySessionMilk\DDVMS Source"
           TopLeft="172.777777777778,36.1111111111111" />
@@ -16282,49 +16292,9 @@ where OID = ?</property>
           Id="Package\VoluntarySessionMilk\Comando de OLE DB"
           TopLeft="529,585.5" />
         <NodeLayout
-          Size="99,42"
-          Id="Package\VoluntarySessionMilk\Sort"
-          TopLeft="218,138" />
-        <NodeLayout
           Size="204,42"
           Id="Package\VoluntarySessionMilk\DELPRO Destination"
           TopLeft="405,38" />
-        <EdgeLayout
-          Id="Package\VoluntarySessionMilk.Paths[insert]"
-          TopLeft="354.333333333333,498">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="25.6666666666667,94.5"
-              Start="0,0"
-              End="25.6666666666667,87">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,34.3349056603774" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,34.3349056603774"
-                    Point2="0,38.3349056603774"
-                    Point3="4,38.3349056603774" />
-                  <mssgle:LineSegment
-                    End="21.6666666666667,38.3349056603774" />
-                  <mssgle:CubicBezierSegment
-                    Point1="21.6666666666667,38.3349056603774"
-                    Point2="25.6666666666667,38.3349056603774"
-                    Point3="25.6666666666667,42.3349056603774" />
-                  <mssgle:LineSegment
-                    End="25.6666666666667,87" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-0.116647135416656,43.3349056603774,25.8999609375,9.451171875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\VoluntarySessionMilk.Paths[updated]"
           TopLeft="363.5,363">
@@ -16393,7 +16363,7 @@ where OID = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="91.1141666666667,40.4952830188679,31.605,11.609375"
+              BoundingBox="91.1141666666665,40.4952830188679,31.605,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16530,7 +16500,9 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0.361111111111001,34.9444444444445,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -16555,10 +16527,6 @@ where OID = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="177,42"
-          Id="Package\VoluntarySessionMilk\OLE DB Destination"
-          TopLeft="94,411" />
         <EdgeLayout
           Id="Package\VoluntarySessionMilk.Paths[insert1]"
           TopLeft="338.333333333333,363">
@@ -16591,7 +16559,43 @@ where OID = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-90.8666471354167,24.4869240348692,25.8999609375,9.451171875"
+              BoundingBox="-90.8666471354165,24.4869240348692,25.8999609375,9.451171875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\VoluntarySessionMilk.Paths[insert]"
+          TopLeft="354.333333333333,498">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.6666666666667,94.5"
+              Start="0,0"
+              End="25.6666666666667,87">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.3349056603774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.3349056603774"
+                    Point2="0,38.3349056603774"
+                    Point3="4,38.3349056603774" />
+                  <mssgle:LineSegment
+                    End="21.6666666666667,38.3349056603774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.6666666666667,38.3349056603774"
+                    Point2="25.6666666666667,38.3349056603774"
+                    Point3="25.6666666666667,42.3349056603774" />
+                  <mssgle:LineSegment
+                    End="25.6666666666667,87" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-0.116647135416649,43.3349056603774,25.8999609375,9.451171875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -16600,6 +16604,19 @@ where OID = ?</property>
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\VoluntarySessionMilk\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\VoluntarySessionMilk\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -16626,19 +16643,6 @@ where OID = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\VoluntarySessionMilk\DELPRO Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\VoluntarySessionMilk\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

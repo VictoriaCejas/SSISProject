@@ -7,15 +7,36 @@
   DTS:CreatorName="DAR-LAB-MA\Victoria"
   DTS:DTSID="{3369B68E-95F1-441E-8C0F-57209E2DB594}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.694.0"
+  DTS:LastModifiedProductVersion="16.0.521.0"
   DTS:LocaleID="11274"
   DTS:ObjectName="Stage1"
   DTS:PackageType="5"
-  DTS:VersionBuild="238"
-  DTS:VersionGUID="{08621562-AEB5-43CF-974B-A181AE0C8FA3}">
+  DTS:VersionBuild="240"
+  DTS:VersionGUID="{C18BADCC-EB0F-42BB-B3B7-DAC97C0E601A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A7231FFE-7A0D-4669-BD63-F0DD77FA85C1}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="DateFrom">
+      <DTS:VariableValue
+        DTS:DataType="7">12/16/2022 9:10:56 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{616D7D43-EC50-415B-9338-38319E2E69E0}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_DATE)(DT_DBDATE)GETDATE()"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DateTo">
+      <DTS:VariableValue
+        DTS:DataType="7">1/9/2023</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Animal Extended"
@@ -30085,54 +30106,54 @@ where OID = ?</property>
         <NodeLayout
           Size="162,42"
           Id="Package\Animal Extended"
-          TopLeft="73.222222222222,158.888888888889" />
+          TopLeft="73.222222222222,225.888888888889" />
         <NodeLayout
           Size="202,42"
           Id="Package\Animal Reproduction Info"
-          TopLeft="60,287" />
+          TopLeft="60,354" />
         <NodeLayout
           Size="143,42"
           Id="Package\Basic Animal"
-          TopLeft="104.611111111111,30.5" />
+          TopLeft="104.611111111111,97.5" />
         <NodeLayout
           Size="155,42"
           Id="Package\History Animal"
-          TopLeft="73,409" />
+          TopLeft="73,476" />
         <NodeLayout
           Size="204,42"
           Id="Package\History Animal Daily Data"
-          TopLeft="78,725" />
+          TopLeft="78,792" />
         <NodeLayout
           Size="219,42"
           Id="Package\History Animal Lactation Info"
-          TopLeft="42,573" />
+          TopLeft="42,640" />
         <NodeLayout
           Size="219,42"
           Id="Package\UPDATE AnimalExtended"
-          TopLeft="250,197" />
+          TopLeft="250,264" />
         <NodeLayout
           Size="220,47"
           Id="Package\UPDATE AnimalReproductionInfo"
-          TopLeft="257,340" />
+          TopLeft="257,407" />
         <NodeLayout
           Size="170,42"
           Id="Package\UPDATE BasicAnimal"
-          TopLeft="341,76" />
+          TopLeft="341,143" />
         <NodeLayout
           Size="220,47"
           Id="Package\UPDATE HistoryAnimal"
-          TopLeft="274,496" />
+          TopLeft="274,563" />
         <NodeLayout
           Size="242,42"
           Id="Package\UPDATE HistoryAnimalDailyData"
-          TopLeft="321.388888888889,803.5" />
+          TopLeft="321.388888888889,870.5" />
         <NodeLayout
           Size="258,42"
           Id="Package\UPDATE HistoryAnimalLactationInfo"
-          TopLeft="273,650" />
+          TopLeft="273,717" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="247.611111111111,51.5">
+          TopLeft="247.611111111111,118.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30166,7 +30187,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="359.5,239">
+          TopLeft="359.5,306">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30200,7 +30221,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1 1]"
-          TopLeft="180,767">
+          TopLeft="180,834">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30234,7 +30255,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="426,118">
+          TopLeft="426,185">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30268,7 +30289,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="235.222222222222,174.5">
+          TopLeft="235.222222222222,241.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30296,7 +30317,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="262,308">
+          TopLeft="262,375">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30324,7 +30345,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="257,363.5">
+          TopLeft="257,430.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30358,7 +30379,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="150.5,451">
+          TopLeft="150.5,518">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30392,7 +30413,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="384,543">
+          TopLeft="384,610">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30426,7 +30447,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="151.5,615">
+          TopLeft="151.5,682">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -30460,7 +30481,7 @@ where OID = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="402,692">
+          TopLeft="402,759">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
