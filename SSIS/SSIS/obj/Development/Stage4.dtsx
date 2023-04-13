@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{C3289A88-FBED-41AB-B900-772861C1125E}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{9CAF3FFE-631D-4BD5-8150-BA60A578A8D8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -3275,13 +3275,13 @@ where OID = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
-                      name="Expression">([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[OID]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[OID (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[IsActive]}, FALSE ) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[IsActive (1)]}, FALSE ))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNumber]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNumber (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNameLong]},"") != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNameLong (1)]},""))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNameShort]},"") != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNameShort (1)]},""))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedType]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedType (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[Farm]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[Farm (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DryMatter]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DryMatter (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[CurrentPrice]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[CurrentPrice (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DispensedManually]}, FALSE ) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DispensedManually (1)]}, FALSE ))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[IndividualFeedingEnabled]}, FALSE ) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[IndividualFeedingEnabled (1)]}, FALSE ))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[LoadingEnabled]}, FALSE ) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[LoadingEnabled (1)]}, FALSE ))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[RationProperties]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[RationProperties (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[LoadingProperties]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[LoadingProperties (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DefaultRation]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DefaultRation (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[OptimisticLockField]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[OptimisticLockField (1)]},0))) || ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[GCRecord]},0) != ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[GCRecord (1)]},0)))</property>
+                      name="Expression">([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[OID]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[OID (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[IsActive]}, FALSE ) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[IsActive (1)]}, FALSE ))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNumber]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNumber (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNameLong]},"") == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNameLong (1)]},""))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNameShort]},"") == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedNameShort (1)]},""))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedType]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[FeedType (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[Farm]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[Farm (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DryMatter]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DryMatter (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[CurrentPrice]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[CurrentPrice (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DispensedManually]}, FALSE ) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DispensedManually (1)]}, FALSE ))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[IndividualFeedingEnabled]}, FALSE ) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[IndividualFeedingEnabled (1)]}, FALSE ))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[LoadingEnabled]}, FALSE ) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[LoadingEnabled (1)]}, FALSE ))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[RationProperties]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[RationProperties (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[LoadingProperties]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[LoadingProperties (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DefaultRation]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[DefaultRation (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[OptimisticLockField]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[OptimisticLockField (1)]},0))) &amp;&amp; ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[GCRecord]},0) == ([REPLACENULL](#{Package\Feed\Left Join.Outputs[Salida de combinación de mezcla].Columns[GCRecord (1)]},0)))</property>
                     <property
                       containsID="true"
                       dataType="System.String"
                       description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
                       expressionType="Notify"
-                      name="FriendlyExpression">(REPLACENULL(OID,0) != (REPLACENULL([OID (1)],0))) || (REPLACENULL(IsActive, FALSE ) != (REPLACENULL([IsActive (1)], FALSE ))) || (REPLACENULL(FeedNumber,0) != (REPLACENULL([FeedNumber (1)],0))) || (REPLACENULL(FeedNameLong,"") != (REPLACENULL([FeedNameLong (1)],""))) || (REPLACENULL(FeedNameShort,"") != (REPLACENULL([FeedNameShort (1)],""))) || (REPLACENULL(FeedType,0) != (REPLACENULL([FeedType (1)],0))) || (REPLACENULL(Farm,0) != (REPLACENULL([Farm (1)],0))) || (REPLACENULL(DryMatter,0) != (REPLACENULL([DryMatter (1)],0))) || (REPLACENULL(CurrentPrice,0) != (REPLACENULL([CurrentPrice (1)],0))) || (REPLACENULL(DispensedManually, FALSE ) != (REPLACENULL([DispensedManually (1)], FALSE ))) || (REPLACENULL(IndividualFeedingEnabled, FALSE ) != (REPLACENULL([IndividualFeedingEnabled (1)], FALSE ))) || (REPLACENULL(LoadingEnabled, FALSE ) != (REPLACENULL([LoadingEnabled (1)], FALSE ))) || (REPLACENULL(RationProperties,0) != (REPLACENULL([RationProperties (1)],0))) || (REPLACENULL(LoadingProperties,0) != (REPLACENULL([LoadingProperties (1)],0))) || (REPLACENULL(DefaultRation,0) != (REPLACENULL([DefaultRation (1)],0))) || (REPLACENULL(OptimisticLockField,0) != (REPLACENULL([OptimisticLockField (1)],0))) || (REPLACENULL(GCRecord,0) != (REPLACENULL([GCRecord (1)],0)))</property>
+                      name="FriendlyExpression">(REPLACENULL(OID,0) == (REPLACENULL([OID (1)],0))) &amp;&amp; (REPLACENULL(IsActive, FALSE ) == (REPLACENULL([IsActive (1)], FALSE ))) &amp;&amp; (REPLACENULL(FeedNumber,0) == (REPLACENULL([FeedNumber (1)],0))) &amp;&amp; (REPLACENULL(FeedNameLong,"") == (REPLACENULL([FeedNameLong (1)],""))) &amp;&amp; (REPLACENULL(FeedNameShort,"") == (REPLACENULL([FeedNameShort (1)],""))) &amp;&amp; (REPLACENULL(FeedType,0) == (REPLACENULL([FeedType (1)],0))) &amp;&amp; (REPLACENULL(Farm,0) == (REPLACENULL([Farm (1)],0))) &amp;&amp; (REPLACENULL(DryMatter,0) == (REPLACENULL([DryMatter (1)],0))) &amp;&amp; (REPLACENULL(CurrentPrice,0) == (REPLACENULL([CurrentPrice (1)],0))) &amp;&amp; (REPLACENULL(DispensedManually, FALSE ) == (REPLACENULL([DispensedManually (1)], FALSE ))) &amp;&amp; (REPLACENULL(IndividualFeedingEnabled, FALSE ) == (REPLACENULL([IndividualFeedingEnabled (1)], FALSE ))) &amp;&amp; (REPLACENULL(LoadingEnabled, FALSE ) == (REPLACENULL([LoadingEnabled (1)], FALSE ))) &amp;&amp; (REPLACENULL(RationProperties,0) == (REPLACENULL([RationProperties (1)],0))) &amp;&amp; (REPLACENULL(LoadingProperties,0) == (REPLACENULL([LoadingProperties (1)],0))) &amp;&amp; (REPLACENULL(DefaultRation,0) == (REPLACENULL([DefaultRation (1)],0))) &amp;&amp; (REPLACENULL(OptimisticLockField,0) == (REPLACENULL([OptimisticLockField (1)],0))) &amp;&amp; (REPLACENULL(GCRecord,0) == (REPLACENULL([GCRecord (1)],0)))</property>
                     <property
                       dataType="System.Int32"
                       description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
@@ -6915,9 +6915,17 @@ where OID = ?</property>
           Id="Package\AnimalFeedConsumed"
           TopLeft="60,60" />
         <NodeLayout
+          Size="104,42"
+          Id="Package\Feed"
+          TopLeft="62,216" />
+        <NodeLayout
           Size="239,42"
           Id="Package\UPDATE AnimalFeedConsumed"
           TopLeft="271,117" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\UPDATE Feed"
+          TopLeft="271,220" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="251,81">
@@ -6946,40 +6954,20 @@ where OID = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="104,42"
-          Id="Package\Feed"
-          TopLeft="60,219" />
-        <NodeLayout
-          Size="152,42"
-          Id="Package\UPDATE Feed"
-          TopLeft="271,276" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="164,240">
+          TopLeft="166,239">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="107,57"
+              EndConnector="105,0"
               Start="0,0"
-              End="99.5,57">
+              End="97.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="49.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="49.5,0"
-                    Point2="53.5,0"
-                    Point3="53.5,4" />
-                  <mssgle:LineSegment
-                    End="53.5,53" />
-                  <mssgle:CubicBezierSegment
-                    Point1="53.5,53"
-                    Point2="53.5,57"
-                    Point3="57.5,57" />
-                  <mssgle:LineSegment
-                    End="99.5,57" />
+                    End="97.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6994,26 +6982,26 @@ where OID = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-278.5,60"
+              EndConnector="-276.5,57"
               Start="0,0"
-              End="-278.5,52.5">
+              End="-276.5,49.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26" />
+                    End="0,24.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
+                    Point1="0,24.5"
+                    Point2="0,28.5"
+                    Point3="-4,28.5" />
                   <mssgle:LineSegment
-                    End="-274.5,30" />
+                    End="-272.5,28.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-274.5,30"
-                    Point2="-278.5,30"
-                    Point3="-278.5,34" />
+                    Point1="-272.5,28.5"
+                    Point2="-276.5,28.5"
+                    Point3="-276.5,32.5" />
                   <mssgle:LineSegment
-                    End="-278.5,52.5" />
+                    End="-276.5,49.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7089,9 +7077,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7257,9 +7243,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7293,9 +7277,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7329,9 +7311,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7353,9 +7333,7 @@ where OID = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7419,21 +7397,33 @@ where OID = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="204,42"
-          Id="Package\Feed\DELPRO Destination"
-          TopLeft="405,38" />
+          Size="157,42"
+          Id="Package\Feed\Sort Destination"
+          TopLeft="424,144" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\Feed\DELPRO"
+          TopLeft="82,404" />
         <NodeLayout
           Size="150,42"
           Id="Package\Feed\DELPRO Dest"
           TopLeft="287,592.5" />
         <NodeLayout
+          Size="121,42"
+          Id="Package\Feed\Left Join"
+          TopLeft="319,238" />
+        <NodeLayout
           Size="165,42"
           Id="Package\Feed\Update Repeated"
           TopLeft="529,585.5" />
         <NodeLayout
-          Size="156,42"
-          Id="Package\Feed\DDVMS Source"
-          TopLeft="172.777777777778,36.1111111111111" />
+          Size="204,42"
+          Id="Package\Feed\DELPRO Destination"
+          TopLeft="405,38" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Feed\Sort Source"
+          TopLeft="181,144" />
         <NodeLayout
           Size="246,42"
           Id="Package\Feed\Conditional for news and repeated"
@@ -7443,9 +7433,31 @@ where OID = ?</property>
           Id="Package\Feed\Conditional for update or insert rows"
           TopLeft="299,453" />
         <NodeLayout
-          Size="124,42"
-          Id="Package\Feed\DELPRO"
-          TopLeft="82,404" />
+          Size="156,42"
+          Id="Package\Feed\DDVMS Source"
+          TopLeft="172.777777777778,36.1111111111111" />
+        <EdgeLayout
+          Id="Package\Feed.Paths[OLE DB Source Output]"
+          TopLeft="250.138888888889,78.1111111111111">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,65.8888888888889"
+              Start="0,0"
+              End="0,58.3888888888889">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58.3888888888889" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Feed.Paths[insert]"
           TopLeft="385.333333333333,495">
@@ -7578,96 +7590,6 @@ where OID = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="137,42"
-          Id="Package\Feed\Sort Source"
-          TopLeft="181,144" />
-        <EdgeLayout
-          Id="Package\Feed.Paths[OLE DB Source Output]"
-          TopLeft="250.138888888889,78.1111111111111">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,65.8888888888889"
-              Start="0,0"
-              End="0,58.3888888888889">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,58.3888888888889" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Feed\Sort Destination"
-          TopLeft="424,144" />
-        <EdgeLayout
-          Id="Package\Feed.Paths[OLE DB Source Output1]"
-          TopLeft="504.75,80">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,64"
-              Start="0,0"
-              End="0,56.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,56.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Feed\Left Join"
-          TopLeft="319,238" />
-        <EdgeLayout
-          Id="Package\Feed.Paths[Salida de ordenación]"
-          TopLeft="249.5,186">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="111.166666666667,52"
-              Start="0,0"
-              End="111.166666666667,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.7928221859706" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.7928221859706"
-                    Point2="0,30.7928221859706"
-                    Point3="4,30.7928221859706" />
-                  <mssgle:LineSegment
-                    End="107.166666666667,30.7928221859706" />
-                  <mssgle:CubicBezierSegment
-                    Point1="107.166666666667,30.7928221859706"
-                    Point2="111.166666666667,30.7928221859706"
-                    Point3="111.166666666667,34.7928221859706" />
-                  <mssgle:LineSegment
-                    End="111.166666666667,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Feed.Paths[Salida de ordenación1]"
           TopLeft="502.5,186">
@@ -7703,6 +7625,40 @@ where OID = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Feed.Paths[Salida de ordenación]"
+          TopLeft="249.5,186">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.166666666667,52"
+              Start="0,0"
+              End="111.166666666667,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.7928221859706" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.7928221859706"
+                    Point2="0,30.7928221859706"
+                    Point3="4,30.7928221859706" />
+                  <mssgle:LineSegment
+                    End="107.166666666667,30.7928221859706" />
+                  <mssgle:CubicBezierSegment
+                    Point1="107.166666666667,30.7928221859706"
+                    Point2="111.166666666667,30.7928221859706"
+                    Point3="111.166666666667,34.7928221859706" />
+                  <mssgle:LineSegment
+                    End="111.166666666667,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Feed.Paths[Salida de combinación de mezcla]"
           TopLeft="381.431818181818,280">
           <EdgeLayout.Curve>
@@ -7724,11 +7680,33 @@ where OID = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Feed.Paths[OLE DB Source Output1]"
+          TopLeft="504.75,80">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64"
+              Start="0,0"
+              End="0,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Feed\DELPRO Destination">
+    design-time-name="Package\Feed\DELPRO">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7754,7 +7732,7 @@ where OID = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Feed\DDVMS Source">
+    design-time-name="Package\Feed\DELPRO Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7767,7 +7745,7 @@ where OID = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Feed\DELPRO">
+    design-time-name="Package\Feed\DDVMS Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
